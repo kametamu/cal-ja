@@ -11,7 +11,14 @@ function cal() {
     
     //마법최댐
     var v3 = Number(document.getElementById("v3").value); // 블릿스톰 세공
-    var v4 = $('input[name="v4"]').is(':checked') ? parseFloat($('input[name="v4"]').val()) : 1; //프렌지상태
+    var v4 = $('input[name="v4"]').is(':checked') ? parseFloat($('input[name="v4"]').val()) : 0; //페이로스시프트
+    var v5 = $('input[name="v5"]').is(':checked') ? parseFloat($('input[name="v5"]').val()) : 0; //슈터스 아이
+    var v6 = $("#v6 option:selected").attr('value'); //아르카나 링크 슈터스아이
+    var v6_1 = $("#v6 option:selected").attr('value1'); //아르카나 링크 아르카나 대미지
+    var v6_2 = $("#v6 option:selected").attr('value2'); //아르카나 링크 레피드파이어 대미지
+
+    
+
 
     var v7 = Number(document.getElementById("v7").value); // 크로스 버스터 세공
     var v8 = Number(document.getElementById("v8").value); // 슈팅러시 세공
@@ -74,7 +81,7 @@ function cal() {
     document.getElementById("res0").value = Math.floor(res0);
 
     var res1; //래피드파이어
-    res1 = (res0*3* (1 + (v29_0+v29_3 )/ 100))+(res0);
+    res1 = (res0*3* (1 + (v29_0+v29_3 )/ 100))+(res0*(6+0.05*v3)* (1 + (v29_0+v29_3 )/ 100));
     document.getElementById("res1").value = Math.floor(res1);
 
     var res1_1; // 래피드파이어 크리
