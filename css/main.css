@@ -148,8 +148,29 @@ body, #wrapper, section, #viewport, #viewport * {
   text-align-last: auto !important;
 }
 
-/* 見出し・ナビ・ボタン等の装飾は Mabinogi を優先（日本語フォールバック併用） */
-h1, h2, h3, header, nav, #manu, #manu ul li a, .button, button, .btn {
+/* ボタン等の装飾は Mabinogi を優先（日本語フォールバック併用） */
+.button, button, .btn {
   font-family: "Mabinogi", var(--jp) !important;
 }
+
+/* ===== Header/Nav を日本語フォントに固定 ===== */
+:root {
+  --jp: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+        "Meiryo", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+header, nav, #manu, #manu * {
+  font-family: var(--jp) !important;
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+  text-align: left !important; /* デザイン上センターにしたい場合は center にしてOK */
+}
+
+/* ロゴ見出しのみ Mabinogi を使いたい場合の任意設定（必要なら） */
+h1, h2 {
+  font-family: "Mabinogi", var(--jp) !important;
+}
+
+/* 長いメニュー文言が折り返されて崩れる場合の保険（任意） */
+#manu ul li a { white-space: nowrap; }
 

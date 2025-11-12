@@ -92,3 +92,18 @@ body, section, #viewport, #viewport * {
   text-align: left !important;
 }
 
+/* ===== Header/Nav を日本語フォントに固定（このページ用の保険） ===== */
+:root {
+  --jp: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+        "Meiryo", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+header, nav, #manu, #manu * {
+  font-family: var(--jp) !important;
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+  text-align: left !important;
+}
+
+#manu ul li a { white-space: nowrap; }
+
