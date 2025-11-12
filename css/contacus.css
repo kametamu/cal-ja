@@ -83,3 +83,12 @@ h2{ font-family:'Mabinogi';
             border-radius: 10px;
 
         }
+
+/* 本文＝日本語フォント固定（このページ専用の保険） */
+body, section, #viewport, #viewport * {
+  font-family: var(--jp) !important;
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+  text-align: left !important;
+}
+

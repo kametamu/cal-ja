@@ -134,3 +134,22 @@ header{
         
     }
   } */
+/* ===== JP本文デフォルト + 字間リセット（最終上書き） ===== */
+:root {
+  --jp: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* 本文側は日本語フォントで描画（Mabinogi は装飾系のみ） */
+body, #wrapper, section, #viewport, #viewport * {
+  font-family: var(--jp) !important;
+  text-align: left !important;        /* 念のため左揃え固定 */
+  letter-spacing: normal !important;  /* 文字間の暴走を抑止 */
+  word-spacing: normal !important;
+  text-align-last: auto !important;
+}
+
+/* 見出し・ナビ・ボタン等の装飾は Mabinogi を優先（日本語フォールバック併用） */
+h1, h2, h3, header, nav, #manu, #manu ul li a, .button, button, .btn {
+  font-family: "Mabinogi", var(--jp) !important;
+}
+
