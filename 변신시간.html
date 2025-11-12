@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
-    <title>마비노기 변신 시간 계산기</title>
+    <title>マビノギ 変身時間計算機</title>
     <link rel="stylesheet" href="css/cont.css">
 
     <script>
@@ -34,18 +34,18 @@
 </head>
 <body>
     <div id="wrapper">
-        <h2>마비노기 변신 시간 계산기</h2>
+        <h2>マビノギ 変身時間計算機</h2>
         <div id="status1">
-            변신의 지속시간을 계산해줍니다. <br>
-            인간: 팔라딘/다크나이트, 엘프/자이언트: 야수화 공통입니다 <br>
-            나이는 외형의 나이가 아닌 실제 나이를 입력하시면 됩니다. <br>
+            変身の持続時間を計算します。<br>
+            人間はパラディン／ダークナイト、エルフ／ジャイアントはビースト化で共通です。<br>
+            年齢は見た目ではなく実年齢を入力してください。<br>
         </div>
         <br><br>
 
         <div id="status">
             <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-                환생 횟수:<input type="text" id="rebirthCount" size="6" placeholder="1"><br>
-                나이:<select id="age" style="background:#D9E5FF">
+                転生回数:<input type="text" id="rebirthCount" size="6" placeholder="1"><br>
+                年齢:<select id="age" style="background:#D9E5FF">
                     <option value="10">10</option>
                     <option value="11">11</option>
                     <option value="12">12</option>
@@ -64,19 +64,19 @@
                     <option value="25">25</option>
                 </select><br>
 
-                추가 변신 지속 시간:<input type="text" id="additionalSec" size="5" value="0">초<br>
+                追加変身時間:<input type="text" id="additionalSec" size="5" value="0">秒<br>
             </div>
         </div>
 
         <div id="result">
-            계산 결과:
+            計算結果:
             <br>
             <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-                변신 지속 시간: <input type="text" placeholder="결과" id="transformDuration" size="12" style="border:none;text-align: right; "><br><br>
+                変身持続時間: <input type="text" placeholder="結果" id="transformDuration" size="12" style="border:none;text-align: right; "><br><br>
             </div>
             <br>
-            <input type="button" value="계산하기" class="button" onclick="cal()">
-            <input type="button" value="초기화" class="button" onclick="reset()">
+            <input type="button" value="計算する" class="button" onclick="cal()">
+            <input type="button" value="リセット" class="button" onclick="reset()">
         </div>
     </div>
 

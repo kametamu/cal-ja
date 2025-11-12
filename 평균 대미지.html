@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>평균 대미지 분포표</title>
+    <title>平均ダメージ分布表</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="css/cont.css">
 </head>
 <body>
 <div class="container">
-    <br> 본 계산기는 대미지와 밸런스를 입력하면 해당 값에 대한 대미지 분포표와 평균대미지를 계산합니다.
-    <br> 민뎀 이하 대미지는 빨간색, 맥댐 이상은 노란색, 사이는 초록색 분포표로 나타나고
-    <br> 실제 대미지는 민댐 이하는 민댐으로, 맥뎀이하는 맥댐으로만 계산되는걸 참고해주시면 감사하겠습니다.
-    <br> 평균 대미지 계산도 민댐이하는 민댐으로, 맥댐이상은 맥댐으로 계산됩니다.
-    <br> 민댐과 맥댐 사이의 재미지에 대해서는 적분식을 사용하여 더했지만 정확하지 않을 수 있으니 참고해주세요.
-    <br> 그래프가 나오지 않는 경우 새로고침을 눌러주세요.
+    <br> この計算機はダメージとバランスを入力すると、対応するダメージ分布表と平均ダメージを算出します。
+    <br> 最小ダメージ以下は赤、最大ダメージ以上は黄色、その間は緑の分布として表示されます。
+    <br> 実際のダメージは最小ダメージ未満は最小ダメージ、最大ダメージ未満はそのまま、最大ダメージ以上は最大ダメージとして計算される点にご注意ください。
+    <br> 平均ダメージの計算も最小未満は最小値、最大以上は最大値で処理されます。
+    <br> 最小と最大の間のダメージは積分式で合算していますが、正確でない場合がありますのでご了承ください。
+    <br> グラフが表示されない場合はリロードしてください。
     <br><br>
     <div class="inputs">
-        <label for="value1">민뎀:</label>
+        <label for="value1">最小ダメージ:</label>
         <input type="number" id="value1" value="980" step="any">
-        <label for="value2">맥뎀:</label>
+        <label for="value2">最大ダメージ:</label>
         <input type="number" id="value2" value="1020" step="any">
-        <label for="valance">밸런스(%):</label>
+        <label for="valance">バランス(%):</label>
         <input type="number" id="valance" value="81" step="any"> 
-        <button id="update">그래프 업데이트</button>
-        <!--        <label for="mean">중앙값:</label>-->
+        <button id="update">グラフを更新</button>
+        <!--        <label for="mean">中央値:</label>-->
         <!--        <input type="number" id=r"mean" step="any">-->
     </div>
 
     <div class="probability-results">
-        <p>확률 (민뎀 이하): <span id="probLower"></span></p>
-        <p>확률 (민뎀과 맥뎀 사이): <span id="probBetween"></span></p>
-        <p>확률 (맥뎀 이상): <span id="probUpper"></span></p>
-        <p>평균대미지: <span id="expectedDamage"></span></p>
+        <p>確率（最小ダメージ以下）: <span id="probLower"></span></p>
+        <p>確率（最小と最大の間）: <span id="probBetween"></span></p>
+        <p>確率（最大ダメージ以上）: <span id="probUpper"></span></p>
+        <p>平均ダメージ: <span id="expectedDamage"></span></p>
     </div><br>
     
-    총 대미지 
+    総ダメージ
     <div class="probability-results2">
         
     </div>

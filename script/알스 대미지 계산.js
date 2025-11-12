@@ -88,19 +88,19 @@ function cal() {
 
     var res01_1; //알케믹시너지 
     if(res00==3){
-        res01_1="증발"}
+        res01_1="蒸発"}
     else if(res00==5){
-        res01_1= "전류"}
+        res01_1= "電流"}
     else if(res00==7){
-        res01_1= "과열"}
+        res01_1= "過熱"}
     else if(res00==15){
-        res01_1= "냉각"}
+        res01_1= "冷却"}
     else if(res00==21){
-        res01_1= "부식"}
+        res01_1= "腐食"}
     else if(res00==35){
-        res01_1= "분진"}
+        res01_1= "粉塵"}
     else {
-        res01_1= "없음"}
+        res01_1= "なし"}
     document.getElementById("res01_1").value = res01_1
 
 

@@ -2,10 +2,10 @@
 
     function validateHuman(honeypot) {
         if (honeypot) {  //if hidden form filled up
-            console.log("Robot Detected!");
+            console.log("ボットが検出されました。");
             return true;
         } else {
-            console.log("Welcome Human!");
+            console.log("ようこそ、人間の方！");
         }
     }
 
@@ -103,7 +103,7 @@
     }
 
     function loaded() {
-        console.log("Contact form submission handler loaded successfully.");
+        console.log("お問い合わせフォームの送信ハンドラーが正常に読み込まれました。");
         // bind to the submit event of our form
         var forms = document.querySelectorAll("form.gform");
         for (var i = 0; i < forms.length; i++) {

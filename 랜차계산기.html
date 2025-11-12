@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
-    <title>랜스 차지 대미지 계산기</title>
+    <title>ランスチャージ ダメージ計算機</title>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -54,18 +54,18 @@
 
 <div id="wrapper">
     <div id="status1">
-        <h2>마비노기 랜스 차지 대미지 계산기</h2>
-        랜스차지 대미지를 계산해줍니다. <br>
-        랜스차지 대미지 배율을 알려줍니다. <br>
-        작성자는 랜스 장비가 없어 테스트 할 수 없습니다. <br>
-        혹시 대미지가 맞지 않는다면 알려주시면 감사합니다. <br>
-        계산의 모든 소수점은 버림 합니다.
+        <h2>マビノギ ランスチャージ ダメージ計算機</h2>
+        ランスチャージのダメージを計算します。<br>
+        ランスチャージのダメージ倍率を確認できます。<br>
+        製作者はランス装備を所持していないためテストができません。<br>
+        ダメージが合わない場合はお知らせいただけると助かります。<br>
+        計算時の小数点以下はすべて切り捨てます。
 
 
         <br><br>
         <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-            랜스차지 랭크:<select name="v1" id="v1" style="background:#D9E5FF">
-            <option value="0.8">연습</option>
+            ランスチャージランク:<select name="v1" id="v1" style="background:#D9E5FF">
+            <option value="0.8">練習</option>
             <option value="1">F</option>
             <option value="1.05">E</option>
             <option value="1.1">D</option>
@@ -81,40 +81,40 @@
             <option value="2.1">3</option>
             <option value="2.25">2</option>
             <option value="2.5">1</option>
-            <option value="2.65">1단</option>
-            <option value="2.8">2단</option>
-            <option value="2.95" selected> 3단</option>
+            <option value="2.65">1段</option>
+            <option value="2.8">2段</option>
+            <option value="2.95" selected> 3段</option>
         </select><br>
 
-            최대 대미지:<input type="text" id="v2" size="5" placeholder="0"><br>
-            전장의서곡 비율:<input type="text" id="v3" size="5" placeholder="0">%<br>
-            보너스 대미지:<input type="text" id="v4" size="5" placeholder="0">%<br>
-            추가크리대미지:<input type="text" id="v5" size="5" placeholder="0">%<br>
-            콤보카드비율:<input type="text" id="v6" size="5" placeholder="0">%<br>
+            最大ダメージ:<input type="text" id="v2" size="5" placeholder="0"><br>
+            戦場の序曲倍率:<input type="text" id="v3" size="5" placeholder="0">%<br>
+            ボーナスダメージ:<input type="text" id="v4" size="5" placeholder="0">%<br>
+            追加クリティカルダメージ:<input type="text" id="v5" size="5" placeholder="0">%<br>
+            コンボカード倍率:<input type="text" id="v6" size="5" placeholder="0">%<br>
 
             <br>
-            착용랜스 종류:
+            装備ランスの種類:
             <select name="v9" id="v9" style="background:#D9E5FF">
-                <option value="1">일반랜스</option>
-                <option value="1.15" selected>디바인랜스</option>
-                <option value="1.2">스피어헤드</option>
+                <option value="1">一般ランス</option>
+                <option value="1.15" selected>ディバインランス</option>
+                <option value="1.2">スピアヘッド</option>
             </select><br>
 
-            물공포:
-            <input type="radio" name="v7" id="v7" value="1" checked>미적용
-            <input type="radio" name="v7" id="v7_1" value="0">적용<br>
+            物理保護無視:
+            <input type="radio" name="v7" id="v7" value="1" checked>未適用
+            <input type="radio" name="v7" id="v7_1" value="0">適用<br>
 
-            펫탑승:
-            <input type="radio" name="v8" id="v8" value="1" checked>미적용
-            <input type="radio" name="v8" id="v8_1" value="0">적용
+            ペット搭乗:
+            <input type="radio" name="v8" id="v8" value="1" checked>未適用
+            <input type="radio" name="v8" id="v8_1" value="0">適用
         </div>
 
         <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-         세공<br>
-            랜스차지 대미지:<input type="text" id="v10" size="5" placeholder="0">레벨<br>
-            주 목표물 대미지:<input type="text" id="v12" size="5" placeholder="0">레벨<br>
-            마상돌진 대미지:<input type="text" id="v13" size="5" placeholder="0">레벨<br>
-            마상돌진 추가거리:<input type="text" id="v14" size="5" placeholder="0">레벨
+         細工<br>
+            ランスチャージダメージ:<input type="text" id="v10" size="5" placeholder="0">レベル<br>
+            主目標ダメージ:<input type="text" id="v12" size="5" placeholder="0">レベル<br>
+            騎乗突進ダメージ:<input type="text" id="v13" size="5" placeholder="0">レベル<br>
+            騎乗突進追加距離:<input type="text" id="v14" size="5" placeholder="0">レベル
             <input type="hidden" placeholder="" id="v14d" size="1" style="border:none;text-align: right; "><br>
 
         </div>
@@ -123,14 +123,14 @@
 
     <br>
 
-    랜스차지 대미지 결과: <br>
+    ランスチャージダメージ結果:<br>
     <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-        랜스차지 대미지:<br>
-        <input type="text" placeholder="결과" id="res1" size="8" style="border:none;text-align: left; "><br><br>
-        랜스차지 크리티컬 대미지:<br>
-        <input type="text" placeholder="결과" id="res3" size="8" style="border:none;text-align: left; "><br><br>
-        랜스차지 대미지 배율 <br>
-        <input type="text" placeholder="결과" id="res2" size="4" style="border:none;text-align: right; ">%<br>
+        ランスチャージダメージ:<br>
+        <input type="text" placeholder="結果" id="res1" size="8" style="border:none;text-align: left; "><br><br>
+        ランスチャージクリティカルダメージ:<br>
+        <input type="text" placeholder="結果" id="res3" size="8" style="border:none;text-align: left; "><br><br>
+        ランスチャージダメージ倍率<br>
+        <input type="text" placeholder="結果" id="res2" size="4" style="border:none;text-align: right; ">%<br>
     </div>
     <br>
 
@@ -138,8 +138,8 @@
     <br>
 
 
-    <input type="button" value="계산하기" class="button" onclick="cal()">
-    <input type="button" value="초기화" class="button" onclick="reset()">
+    <input type="button" value="計算" class="button" onclick="cal()">
+    <input type="button" value="初期化" class="button" onclick="reset()">
 </div>
 
 <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>

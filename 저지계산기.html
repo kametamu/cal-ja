@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
-    <title>저지먼트 블레이드 대미지 계산기</title>
+    <title>ジャッジメントブレード ダメージ計算機</title>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -53,20 +53,20 @@
 <body>
 
 <div id="wrapper">
-    <h2>마비노기 저지먼트 블레이드 대미지 계산기</h2>
+    <h2>マビノギ ジャッジメントブレード ダメージ計算機</h2>
     <div id="status1">
-        저지먼트 대미지를 계산해줍니다. <br>
-        저지먼트 대미지 배율을 알려줍니다. <br>
-        혹시 대미지가 맞지 않는다면 알려주시면 감사합니다. <br>
-        계산의 모든 소수점은 버림 합니다.
+        ジャッジメントのダメージを計算します。 <br>
+        ジャッジメントのダメージ倍率を表示します。 <br>
+        ダメージが合わない場合は教えていただけると助かります。 <br>
+        計算の小数点以下はすべて切り捨てます。
     </div>
 
 
     <br><br>
     <div id="status">
-        스텟관련
+        ステータス関連
         <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-            저지 랭크:<select name="v1" id="v1" style="background:#D9E5FF">
+            ジャッジメントランク:<select name="v1" id="v1" style="background:#D9E5FF">
             <option value="3.7">F</option>
             <option value="3.9">E</option>
             <option value="4.2">D</option>
@@ -84,7 +84,7 @@
             <option value="9" selected> 1</option>
         </select><br>
 
-            처형레벨 :
+            処刑レベル :
             <select name="v9" id="v9" style="background:#D9E5FF">
                 <option value="1">0~9</option>
                 <option value="1.05" selected>10~19</option>
@@ -96,12 +96,12 @@
                 <option value="1.35" selected>70~</option>
             </select><br>
 
-            대미지:<input type="text" id="v6" size="5" placeholder="0">~<input type="text" id="v2" size="5"
+            ダメージ:<input type="text" id="v6" size="5" placeholder="0">~<input type="text" id="v2" size="5"
                                                                             placeholder="0"><br>
-            전장의서곡 비율:<input type="text" id="v3" size="5" placeholder="0">%<br>
-            보너스 대미지:<input type="text" id="v4" size="5" placeholder="0">%<br>
-            추가크리대미지:<input type="text" id="v5" size="5" placeholder="0">%<br>
-            칼의세례 레벨:<select name="v20" id="v20" style="background:#D9E5FF">
+            戦場の序曲倍率:<input type="text" id="v3" size="5" placeholder="0">%<br>
+            ボーナスダメージ:<input type="text" id="v4" size="5" placeholder="0">%<br>
+            追加クリティカルダメージ:<input type="text" id="v5" size="5" placeholder="0">%<br>
+            剣の洗礼レベル:<select name="v20" id="v20" style="background:#D9E5FF">
             <option value="0.1">1</option>
             <option value="0.2">2</option>
             <option value="0.3">3</option>
@@ -119,72 +119,72 @@
             <option value="1.5" selected>15</option>
         </select><br>
 
-            물공포:
-            <input type="radio" name="v7" id="v7" value="1" checked>미적용
-            <input type="radio" name="v7" id="v7_1" value="0">적용<br>
+            物攻ポーション:
+            <input type="radio" name="v7" id="v7" value="1" checked>未適用
+            <input type="radio" name="v7" id="v7_1" value="0">適用<br>
 
-            저지세트:
-            <input type="radio" name="v8" id="v8" value="1" checked>미적용
-            <input type="radio" name="v8" id="v8_1" value="0">적용
+            ジャッジセット:
+            <input type="radio" name="v8" id="v8" value="1" checked>未適用
+            <input type="radio" name="v8" id="v8_1" value="0">適用
         </div>
         <br>
-        대미지 증가 디버프
+        ダメージ増加デバフ
         <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-            데스마커:
-            <input type="radio" name="v10" id="v10" value="1" checked>미적용
-            <input type="radio" name="v10" id="v10_1" value="0">적용<br>
-            에아렌:
-            <input type="radio" name="v11" id="v11" value="1" checked>미적용
-            <input type="radio" name="v11" id="v11_1" value="0">적용<br>
-            장갑세공:
-            <input type="radio" name="v12" id="v12" value="1" checked>미적용
-            <input type="radio" name="v12" id="v12_1" value="0">적용<br><br>
+            デスマーカー:
+            <input type="radio" name="v10" id="v10" value="1" checked>未適用
+            <input type="radio" name="v10" id="v10_1" value="0">適用<br>
+            エアレン:
+            <input type="radio" name="v11" id="v11" value="1" checked>未適用
+            <input type="radio" name="v11" id="v11_1" value="0">適用<br>
+            グローブ細工:
+            <input type="radio" name="v12" id="v12" value="1" checked>未適用
+            <input type="radio" name="v12" id="v12_1" value="0">適用<br><br>
 
-            서포트샷:
-            <input type="radio" name="v13" id="v13" value="1" checked>미적용
-            <input type="radio" name="v13" id="v13_1" value="0">적용<br>
-            폭서마:
-            <input type="radio" name="v14" id="v14" value="1" checked>미적용
-            <input type="radio" name="v14" id="v14_1" value="0">적용<br>
-            마기그래프:
-            <input type="radio" name="v15" id="v15" value="1" checked>미적용
-            <input type="radio" name="v15" id="v15_1" value="0">적용<br>
-            서샷 강화 세트효과:
-            <input type="radio" name="v16" id="v16" value="1" checked>미적용
-            <input type="radio" name="v16" id="v16_1" value="0">적용<br><br>
+            サポートショット:
+            <input type="radio" name="v13" id="v13" value="1" checked>未適用
+            <input type="radio" name="v13" id="v13_1" value="0">適用<br>
+            ポクソマ:
+            <input type="radio" name="v14" id="v14" value="1" checked>未適用
+            <input type="radio" name="v14" id="v14_1" value="0">適用<br>
+            マギグラフ:
+            <input type="radio" name="v15" id="v15" value="1" checked>未適用
+            <input type="radio" name="v15" id="v15_1" value="0">適用<br>
+            サポショ強化セット効果:
+            <input type="radio" name="v16" id="v16" value="1" checked>未適用
+            <input type="radio" name="v16" id="v16_1" value="0">適用<br><br>
 
-            레이지임팩트:
-            <input type="radio" name="v17" id="v17" value="1" checked>미적용
-            <input type="radio" name="v17" id="v17_1" value="0">적용<br>
+            レイジインパクト:
+            <input type="radio" name="v17" id="v17" value="1" checked>未適用
+            <input type="radio" name="v17" id="v17_1" value="0">適用<br>
 
-            고래:
-            <input type="radio" name="v18" id="v18" value="1" checked>미적용
-            <input type="radio" name="v18" id="v18_1" value="0">적용<br>
+            クジラ:
+            <input type="radio" name="v18" id="v18" value="1" checked>未適用
+            <input type="radio" name="v18" id="v18_1" value="0">適用<br>
 
-            폭스롯 소환:
-            <input type="radio" name="v19" id="v19" value="1" checked>미적용
-            <input type="radio" name="v19" id="v19_1" value="0">적용<br>
+            フォックスロット召喚:
+            <input type="radio" name="v19" id="v19" value="1" checked>未適用
+            <input type="radio" name="v19" id="v19_1" value="0">適用<br>
         </div><br>
-        보호감소 디버프
+        保護減少デバフ
         <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-            하데+미르:
-            <input type="radio" name="v21" id="v21" value="1" checked>미적용
-            <input type="radio" name="v21" id="v21_1" value="0">적용<br>
-            상지:
-            <input type="radio" name="v22" id="v22" value="1" checked>미적용
-            <input type="radio" name="v22" id="v22_1" value="0">적용<br>
-            연막:
-            <input type="radio" name="v23" id="v23" value="1" checked>미적용
-            <input type="radio" name="v23" id="v23_1" value="0">적용<br>
-            어퍼컷:
-            <input type="radio" name="v00" value="1" value1="0" value2="0" checked>미적용
-            <input type="radio" name="v00" value="0" value1="1" value2="0">세공없음
-            <input type="radio" name="v00" value="0" value1="0" value2="1">장갑세공<br>
-            붕파:
-            <input type="radio" name="v24" id="v24" value="1" checked>미적용
-            <input type="radio" name="v24" id="v24_1" value="0">적용<br>
+            ハデ+ミル:
+            <input type="radio" name="v21" id="v21" value="1" checked>未適用
+            <input type="radio" name="v21" id="v21_1" value="0">適用<br>
+            サンジ:
+            <input type="radio" name="v22" id="v22" value="1" checked>未適用
+            <input type="radio" name="v22" id="v22_1" value="0">適用<br>
+            煙幕:
+            <input type="radio" name="v23" id="v23" value="1" checked>未適用
+            <input type="radio" name="v23" id="v23_1" value="0">適用<br>
+            アッパーカット:
+            <input type="radio" name="v00" value="1" value1="0" value2="0" checked>未適用
+            <input type="radio" name="v00" value="0" value1="1" value2="0">細工なし
+            <input type="radio" name="v00" value="0" value1="0" value2="1">グローブ細工<br>
+            ブンパ:
+            <input type="radio" name="v24" id="v24" value="1" checked>未適用
+            <input type="radio" name="v24" id="v24_1" value="0">適用<br>
 
-           피어싱 레벨:<select name="v25" id="v25" style="background:#D9E5FF">
+           ピアシングレベル:<select name="v25" id="v25" style="background:#D9E5FF">
             <option value="0" selected>0</option>
             <option value="5">1</option>
             <option value="10">2</option>
@@ -203,34 +203,34 @@
 
 
     <div id="result">
-        저지먼트 블레이드 대미지 결과:
+        ジャッジメントブレード ダメージ結果:
         <br>
         <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-            저지먼트 블레이드 대미지:<br>
-            <input type="text" placeholder="결과" id="res1_1" size="8" style="border:none;text-align:center; ">~<input
-                type="text" placeholder="결과" id="res1" size="8" style="border:none;text-align: center; "><br><br>
-            저지먼트 블레이드 크리티컬 대미지:<br>
-            <input type="text" placeholder="결과" id="res3_1" size="8" style="border:none;text-align: center; ">~<input
-                type="text" placeholder="결과" id="res3" size="8" style="border:none;text-align: center; "><br><br>
-            대미지(크리포함) 배율: <br>
-            <input type="text" placeholder="결과" id="res2" size="5" style="border:none;text-align: center; ">
-            (<input type="text" placeholder="결과" id="res2_1" size="5"
+            ジャッジメントブレード ダメージ:<br>
+            <input type="text" placeholder="結果" id="res1_1" size="8" style="border:none;text-align:center; ">~<input
+                type="text" placeholder="結果" id="res1" size="8" style="border:none;text-align: center; "><br><br>
+            ジャッジメントブレード クリティカルダメージ:<br>
+            <input type="text" placeholder="結果" id="res3_1" size="8" style="border:none;text-align: center; ">~<input
+                type="text" placeholder="結果" id="res3" size="8" style="border:none;text-align: center; "><br><br>
+            ダメージ（クリ含む）倍率: <br>
+            <input type="text" placeholder="結果" id="res2" size="5" style="border:none;text-align: center; ">
+            (<input type="text" placeholder="結果" id="res2_1" size="5"
                     style="border:none;text-align: center; ">)%<br>
 
-            버프적용 크리티컬 대미지: <br>
-            <input type="text" placeholder="결과" id="res4" size="8" style="border:none;text-align: center; ">~
-            <input type="text" placeholder="결과" id="res4_1" size="8" style="border:none;text-align: center; "><br>
+            バフ適用クリティカルダメージ: <br>
+            <input type="text" placeholder="結果" id="res4" size="8" style="border:none;text-align: center; ">~
+            <input type="text" placeholder="結果" id="res4_1" size="8" style="border:none;text-align: center; "><br>
 
-            하시딤 크리 대미지: <input type="text" placeholder="결과" id="res6" size="12" style="border:none;text-align: center; "><br>
-            <input type="text" placeholder="결과" id="res5" size="8" style="border:none;text-align: center; ">~
-            <input type="text" placeholder="결과" id="res5_1" size="8" style="border:none;text-align: center; "><br>
+            ハシディム クリティカルダメージ: <input type="text" placeholder="結果" id="res6" size="12" style="border:none;text-align: center; "><br>
+            <input type="text" placeholder="結果" id="res5" size="8" style="border:none;text-align: center; ">~
+            <input type="text" placeholder="結果" id="res5_1" size="8" style="border:none;text-align: center; "><br>
 
         </div>
         <br>
 
 
-        <input type="button" value="계산하기" class="button" onclick="cal()">
-        <input type="button" value="초기화" class="button" onclick="reset()">
+        <input type="button" value="計算する" class="button" onclick="cal()">
+        <input type="button" value="リセット" class="button" onclick="reset()">
 
     </div>
 </div>
