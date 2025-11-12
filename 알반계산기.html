@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
-    <title>알반훈련소 난이도 계산기</title>
+    <title>アルバン訓練所難易度計算機</title>
     <link rel="stylesheet" href="css/cont.css">
     <script type="text/javascript" src="script/알반.js"></script>
    <script>
@@ -47,121 +47,121 @@
 
 <body>
     <div id="wrapper">
-        <h2>알반훈련소 난이도 계산기</h2>
+        <h2>アルバン訓練所難易度計算機</h2>
         <div id="status1">
-            알반 기사단 훈련소 난이도를 계산하기 위한 계산기 입니다. <br>
-            가지고 있는 훈련석을 입력하시면 점수와 등급이 나옵니다<br>
-            몬스터/파티원 훈련석만 집어넣으면 특정난이도를 맞추기 위해 필요한 훈련석을 표시합니다. <br>
-            등급에 대한 점수는 A등급 100점, S등급 130점, SS등급 190점 이상입니다. <br>
-            혹시 계산이 정확하지 않거나 틀린부분이 있다면 만돌린서버 "템이" 로 쪽지 부탁드립니다. <br>
+            アルバン騎士団訓練所の難易度を算出するための計算機です。<br>
+            所持している訓練石を入力すると得点と等級が表示されます。<br>
+            モンスター／パーティーメンバーの訓練石だけ入力した場合、特定の難易度に合わせるために必要な訓練石を提示します。<br>
+            等級の目安はA等級100点、S等級130点、SS等級190点以上です。<br>
+            計算が正しくない、または誤りがある場合はマンドリンサーバーの「템이」までメッセージをお願いします。<br>
             Data based on NEXON Open API <br><br>
 
         </div>
-        <label for="v1">훈련장 난이도</label>
+        <label for="v1">訓練場難易度</label>
         <select name="v1" id="v1" style="background:#D9E5FF" onchange="cal();fetchData('v1')">
-            <option value="0"  selected>없음</option>
-            <option value="50" data-label="[난이도-중급]">중급</option>
-            <option value="70" data-label="[난이도-상급]">상급</option>
-            <option value="100" data-label="[난이도-하드 일반]">하드-일반</option>
-            <option value="130" data-label="[난이도-하드 중급]">하드-중급</option>
+            <option value="0"  selected>なし</option>
+            <option value="50" data-label="[난이도-중급]">中級</option>
+            <option value="70" data-label="[난이도-상급]">上級</option>
+            <option value="100" data-label="[난이도-하드 일반]">ハード-一般</option>
+            <option value="130" data-label="[난이도-하드 중급]">ハード-中級</option>
 
-        </select>(경매장 최저가: <span id="v1-price">-</span>)<br>
+        </select>(競売場最安値: <span id="v1-price">-</span>)<br>
 
-        <label for="v2">몬스터 훈련석</label>
+        <label for="v2">モンスター訓練石</label>
         <select name="v2" id="v2" style="background:#D9E5FF" onchange="cal();fetchData('v2')">
-            <option value="0" style="background:#87cefa" selected>없음</option>
+            <option value="0" style="background:#87cefa" selected>なし</option>
 
-            <option value="10" data-label="[몬스터-생명력 150%]" style="background:#87cefa">생명력 150%</option>
-            <option value="10" data-label="[몬스터-대미지 150%]" style="background:#87cefa">대미지 150%</option>
-            <option value="10" data-label="[몬스터-보호 110%]" style="background:#87cefa">보호 110%</option>
-            <option value="10" data-label="[몬스터-방어 110%]" style="background:#87cefa">방어 110%</option>
-            <option value="10" data-label="[몬스터-지력 120%]" style="background:#87cefa">지력 120%</option>
-            <option value="10" data-label="[몬스터-행운 120%]" style="background:#87cefa">행운 120%</option>
+            <option value="10" data-label="[몬스터-생명력 150%]" style="background:#87cefa">生命力150%</option>
+            <option value="10" data-label="[몬스터-대미지 150%]" style="background:#87cefa">ダメージ150%</option>
+            <option value="10" data-label="[몬스터-보호 110%]" style="background:#87cefa">保護110%</option>
+            <option value="10" data-label="[몬스터-방어 110%]" style="background:#87cefa">防御110%</option>
+            <option value="10" data-label="[몬스터-지력 120%]" style="background:#87cefa">知力120%</option>
+            <option value="10" data-label="[몬스터-행운 120%]" style="background:#87cefa">幸運120%</option>
             
-            <option value="15" data-label="[몬스터-방어 120%]" style="background:#7b68ee">방어 120%</option>
-            <option value="15" data-label="[몬스터-지력 150%]" style="background:#7b68ee">지력 150%</option>
-            <option value="15" data-label="[몬스터-행운 150%]" style="background:#7b68ee">행운 150%</option>
+            <option value="15" data-label="[몬스터-방어 120%]" style="background:#7b68ee">防御120%</option>
+            <option value="15" data-label="[몬스터-지력 150%]" style="background:#7b68ee">知力150%</option>
+            <option value="15" data-label="[몬스터-행운 150%]" style="background:#7b68ee">幸運150%</option>
             
-            <option value="20" data-label="[몬스터-보호 120%]" style="background:#7b68ee">보호 120%</option>
-            <option value="20" data-label="[몬스터-등장 수 150%]" style="background:#4682b4">등장수 150%</option>
-            <option value="20" data-label="[몬스터-지력 200%]" style="background:#4682b4">지력 200%</option>
-            <option value="20" data-label="[몬스터-행운 200%]" style="background:#4682b4">행운 200%</option>
+            <option value="20" data-label="[몬스터-보호 120%]" style="background:#7b68ee">保護120%</option>
+            <option value="20" data-label="[몬스터-등장 수 150%]" style="background:#4682b4">出現数150%</option>
+            <option value="20" data-label="[몬스터-지력 200%]" style="background:#4682b4">知力200%</option>
+            <option value="20" data-label="[몬스터-행운 200%]" style="background:#4682b4">幸運200%</option>
             
-            <option value="25" data-label="[몬스터-방어 150%]" style="background:#b0e0e6">방어 150%</option>
+            <option value="25" data-label="[몬스터-방어 150%]" style="background:#b0e0e6">防御150%</option>
             
-            <option value="30" data-label="[몬스터-보호 150%]" style="background:#48d1cc">보호 150%</option>
-            <option value="30" data-label="[몬스터-대미지 300%]" style="background:#48d1cc">대미지 300%</option>
-            <option value="30" data-label="[몬스터-생명력 300%]" style="background:#48d1cc">생명력 300%</option>
+            <option value="30" data-label="[몬스터-보호 150%]" style="background:#48d1cc">保護150%</option>
+            <option value="30" data-label="[몬스터-대미지 300%]" style="background:#48d1cc">ダメージ300%</option>
+            <option value="30" data-label="[몬스터-생명력 300%]" style="background:#48d1cc">生命力300%</option>
             
-            <option value="40" data-label="[몬스터-등장 수 200%]" style="background:#5f9ea0">등장수 200%</option>
+            <option value="40" data-label="[몬스터-등장 수 200%]" style="background:#5f9ea0">出現数200%</option>
             
-            <option value="45" data-label="[몬스터-생명력 500%]" style="background:#4169e1">생명력 500%</option>
-            <option value="45" data-label="[몬스터-대미지 500%]" style="background:#4169e1">대미지 500%</option>
+            <option value="45" data-label="[몬스터-생명력 500%]" style="background:#4169e1">生命力500%</option>
+            <option value="45" data-label="[몬스터-대미지 500%]" style="background:#4169e1">ダメージ500%</option>
             
-
-
 
 
-        </select> (경매장 최저가: <span id="v2-price">-</span>)<br>
 
-        <label for="v3">파티원 훈련석</label>
+
+        </select> (競売場最安値: <span id="v2-price">-</span>)<br>
+
+        <label for="v3">パーティーメンバー訓練石</label>
         <select name="v3" id="v3" style="background:#D9E5FF" onchange="cal();fetchData('v3')">
-            <option value="0" data-label="없음" style="background:#87cefa" selected>없음</option>
+            <option value="0" data-label="없음" style="background:#87cefa" selected>なし</option>
 
-            <option value="10" data-label="[파티원-생명력 회복 속도 70%]" style="background:#87cefa">생명력 회복속도 70%</option>
-            <option value="10" data-label="[파티원-스태미나 회복 속도 70%]" style="background:#87cefa">스태미나 회복속도 70%</option>
-            <option value="10" data-label="[파티원-마나 회복 속도 70%]" style="background:#87cefa">마나 회복속도 70%</option>
-            <option value="10" data-label="[파티원-근접 스킬 대미지 70%]" style="background:#87cefa">근접 스킬대미지 70%</option>
-            <option value="10" data-label="[파티원-마법 시전 속도 70%]" style="background:#87cefa">마법 시전속도 70%</option>
-            <option value="10" data-label="[파티원-궁수 조준 속도 70%]" style="background:#87cefa">궁술 조준속도 70%</option>
-            <option value="10" data-label="[파티원-크리티컬 확률 70%]" style="background:#87cefa">크리티컬확률 70%</option>
-            <option value="10" data-label="[파티원-생명력 70%]" style="background:hsl(203, 92%, 75%)">생명력 70%</option>
+            <option value="10" data-label="[파티원-생명력 회복 속도 70%]" style="background:#87cefa">生命力回復速度70%</option>
+            <option value="10" data-label="[파티원-스태미나 회복 속도 70%]" style="background:#87cefa">スタミナ回復速度70%</option>
+            <option value="10" data-label="[파티원-마나 회복 속도 70%]" style="background:#87cefa">マナ回復速度70%</option>
+            <option value="10" data-label="[파티원-근접 스킬 대미지 70%]" style="background:#87cefa">近接スキルダメージ70%</option>
+            <option value="10" data-label="[파티원-마법 시전 속도 70%]" style="background:#87cefa">魔法詠唱速度70%</option>
+            <option value="10" data-label="[파티원-궁수 조준 속도 70%]" style="background:#87cefa">弓術照準速度70%</option>
+            <option value="10" data-label="[파티원-크리티컬 확률 70%]" style="background:#87cefa">クリティカル確率70%</option>
+            <option value="10" data-label="[파티원-생명력 70%]" style="background:hsl(203, 92%, 75%)">生命力70%</option>
             
-            <option value="20" data-label="[파티원-생명력 회복 속도 50%]" style="background:#7b68ee">생명력 회복속도 50%</option>
-            <option value="20" data-label="[파티원-스태미나 회복 속도 50%]" style="background:#7b68ee">스태미나 회복속도 50%</option>
-            <option value="20" data-label="[파티원-근접 스킬 대미지 50%]" style="background:#7b68ee">근접 스킬 대미지 50%</option>
-            <option value="20" data-label="[파티원-마법 시전 속도 50%]" style="background:#7b68ee">마법 시전속도 50%</option>
-            <option value="20" data-label="[파티원-궁수 조준 속도 50%]" style="background:#7b68ee">궁술 조준속도 50%</option>
-            <option value="20" data-label="[파티원-크리티컬 확률 50%]" style="background:#7b68ee">크리티컬확률 50%</option>
-            <option value="20" data-label="[파티원-최대 대미지 70%]" style="background:#7b68ee">최대 대미지 70%</option>
+            <option value="20" data-label="[파티원-생명력 회복 속도 50%]" style="background:#7b68ee">生命力回復速度50%</option>
+            <option value="20" data-label="[파티원-스태미나 회복 속도 50%]" style="background:#7b68ee">スタミナ回復速度50%</option>
+            <option value="20" data-label="[파티원-근접 스킬 대미지 50%]" style="background:#7b68ee">近接スキルダメージ50%</option>
+            <option value="20" data-label="[파티원-마법 시전 속도 50%]" style="background:#7b68ee">魔法詠唱速度50%</option>
+            <option value="20" data-label="[파티원-궁수 조준 속도 50%]" style="background:#7b68ee">弓術照準速度50%</option>
+            <option value="20" data-label="[파티원-크리티컬 확률 50%]" style="background:#7b68ee">クリティカル確率50%</option>
+            <option value="20" data-label="[파티원-최대 대미지 70%]" style="background:#7b68ee">最大ダメージ70%</option>
             
-            <option value="30" data-label="[파티원-생명력 50%]" style="background:#5f9ea0">생명력 50%</option>
+            <option value="30" data-label="[파티원-생명력 50%]" style="background:#5f9ea0">生命力50%</option>
             
-            <option value="45" data-label="[파티원-최대 대미지 50%]" style="background:#4169e1">최대 대미지 50%</option>
+            <option value="45" data-label="[파티원-최대 대미지 50%]" style="background:#4169e1">最大ダメージ50%</option>
 
-        </select> (경매장 최저가: <span id="v3-price">-</span>)<br>
+        </select> (競売場最安値: <span id="v3-price">-</span>)<br>
 
 
-        <label for="v4">훈련장 인원</label>
+        <label for="v4">訓練場人数</label>
 
         <select name="v4" id="v4" style="background:#D9E5FF" onchange="cal();fetchData('v4')">
-            <option value="0" selected>없음</option>
-            <option value="0" data-label="[훈련 인원-4인]">4인</option>
-            <option value="0" data-label="[훈련 인원-6인]">6인</option>
-            <option value="-30" data-label="[훈련 인원-무제한]">무제한</option>
-        </select> (경매장 최저가 <span id="v4-price">-</span>)<br>
+            <option value="0" selected>なし</option>
+            <option value="0" data-label="[훈련 인원-4인]">4人</option>
+            <option value="0" data-label="[훈련 인원-6인]">6人</option>
+            <option value="-30" data-label="[훈련 인원-무제한]">無制限</option>
+        </select> (競売場最安値 <span id="v4-price">-</span>)<br>
 
         <br>
         <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-            보상 점수:
+            報酬ポイント:
             <input type="text" id="res1" size="5" style="border:none;"> <br>
-            보상등급:
+            報酬等級:
             <input type="text" id="res2" size="5" style="border:none;"> <br>
 
         </div><br>
 
-        A만들기:
+        A達成の目安:
         <!-- <input type="text" id="res3" size="100%" style="border:none;"> <br> -->
         <output id="res3"></output><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <output id="res3_1"></output><br><br>
 
-        S만들기:
+        S達成の目安:
         <!-- <input type="text" id="res4" size="100%" style="border:none;"> <br> -->
         <output id="res4"></output><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <output id="res4_1"></output><br><br>
-        SS만들기:
+        SS達成の目安:
         <!-- <input type="text" id="res5" size="100%" style="border:none;">  -->
         <output id="res5"></output><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

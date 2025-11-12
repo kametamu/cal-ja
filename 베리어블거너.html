@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
-    <title>마비노기 베리어블거너 계산기</title>
+    <title>マビノギ ベリアブルガンナー計算機</title>
     <link rel="stylesheet" href="css/cont.css">
 
     <script>
@@ -57,19 +57,19 @@
 
 <body>
 <div id="wrapper">
-    <h2>마비노기 베리어블거너 계산기 </h2>
+    <h2>マビノギ ベリアブルガンナー計算機</h2>
     <div id="status1">
-        해당 계산기에 적용되는 모든 마법 및 패시브의 랭크는 최고랭크 기준입니다. <br>
-        이 계산기는 베리어블거너 아르카나 스킬의 대미지를 보여줍니다. <br>
-        값이 현저하게 차이가 난다면 알려주시면 감사하겠습니다.<br>
-        재능관련 추가대미지 요소는 아르카나 스킬의 자체 대미지에는 영향을 주지 않습니다.<br>
+        この計算機で適用されるすべての魔法およびパッシブのランクは最高ランクが前提です。<br>
+        この計算機はベリアブルガンナー アルカナスキルのダメージを表示します。<br>
+        値が大きく異なる場合はお知らせいただけると助かります。<br>
+        才能に関する追加ダメージ要素はアルカナスキル本体のダメージには影響しません。<br>
     
         </div>
     <br><br>
     <div id="status">
-        스텟<br>
+        ステータス<br>
         <div style="height: auto; width: 300px; border: 1px solid; padding:10px">
-            최대공격력:
+            最大攻撃力:
             <input type="text" id="v1" size="5" placeholder="0"><br>
                                 
             <!-- <label>마법 적용물공 </label><input type="text" id="v2" size="5" placeholder="0"><br>
@@ -78,70 +78,70 @@
                 <p>인챈트,낭만농장,타이틀,인형가방,무리아스성수,페스티벌푸드</p>
             </details>
             최대공격력:<input Type="text" id="v2_1" size="5" placeholder="0"> <br> -->
-            전장 비율:<input type="text" id="v2_2" size="5" placeholder="0"> 물공포:<input type="checkbox" name="v2_3" value=1><br>
+            戦場比率:<input type="text" id="v2_2" size="5" placeholder="0"> 物攻ポーション:<input type="checkbox" name="v2_3" value=1><br>
 
-            페이로드 시프트:<input type="checkbox" name="v4" value=1.3><br>
+            ペイロードシフト:<input type="checkbox" name="v4" value=1.3><br>
 
 
         </div>
         <br>
-        세공<br>
-        <span style="font-size:10px; color: red;">*마기그래프는 세공과 합연산이므로 더해서 사용하시면 됩니다. </span><br>
+        細工<br>
+        <span style="font-size:10px; color: red;">*マギグラフは細工と加算なので合計して入力してください。 </span><br>
         <div style="height: auto; width:350px; border: 1px solid; padding:10px">
-            불릿스톰 제한해제 세공Lv:
+            ブリットストーム制限解除細工Lv:
             <input type="text" id="v3" size="5" placeholder="0"> <br>
-            크로스 버스터 세공Lv:
+            クロスバスター細工Lv:
             <input type="text" id="v7" size="5" placeholder="0"><br>
-            슈팅러시 세공Lv:
+            シューティングラッシュ細工Lv:
             <input type="text" id="v8" size="5" placeholder="0"><br>
-            파 어웨이 세공Lv:
+            ファーアウェイ細工Lv:
             <input type="text" id="v9" size="5" placeholder="0">
         </div>
         <br>
 
-        아이템,타이틀
+        アイテム・タイトル
         <div style="height: auto; width: 350px; border: 1px solid; padding:10px">
             <select name="v30" id="v30" style="background:#D9E5FF">
-                <option value="1.1" value1="0" value2="0.08">켈다제</option>
-                <option value="1.15" value1="0" value2="0" selected>일반듀얼건</option>
-                <option value="1.15" value1="0" value2="0.1">나이트스톰</option>
-                <option value="1.15" value1="0.15" value2="0.15">뱅퀴셔</option>
-                <option value="1.1" value1="0.2" value2="0.2">소울리버</option>
+                <option value="1.1" value1="0" value2="0.08">ケルダゼ</option>
+                <option value="1.15" value1="0" value2="0" selected>一般デュアルガン</option>
+                <option value="1.15" value1="0" value2="0.1">ナイトストーム</option>
+                <option value="1.15" value1="0.15" value2="0.15">バンクイッシャー</option>
+                <option value="1.1" value1="0.2" value2="0.2">ソウルリバー</option>
 
             </select><br>
 
-           에르그
+           エルグ
             <select name="v34" id="v34" style="background:#D9E5FF">
-                <option value="0" selected >없음</option>
+                <option value="0" selected >なし</option>
                 <option value="0.48" selected >a50</option>
                 <option value="0.53" selected >s45</option>
                 <option value="0.8" > S50</option>
             </select><br>
    
-            슈러마 타이틀:
+            シュラマタイトル:
             <input type="checkbox" name="v12" value=1><br>
 
-            블릿마 타이틀:
+            ブリットマタイトル:
             <input type="checkbox" name="v13" value=1><br>
-           
-            크버마 타이틀:
+
+            クロバマタイトル:
             <input type="checkbox" name="v14" value=1><br>
-            파어웨이마 타이틀:
+            ファーアウェイマタイトル:
             <input type="checkbox" name="v15" value=1><br><br>
 
 
-            추가 대미지 <output id="v29"></output>%<br>
-            푸개,인형,토템,낭농등의 합:<input type="text" id="v29_0" size="5" placeholder="0">%<br>
-            약점분석<input type="checkbox" name="v29_1" value=10>,광폭화<input type="checkbox" name="v29_2" value=10>,배틀맴버쉽:<input type="checkbox" name="v29_3" value=1> <br>
+            追加ダメージ <output id="v29"></output>%<br>
+            フード、ペット、トーテム、栄養などの合計:<input type="text" id="v29_0" size="5" placeholder="0">%<br>
+            弱点分析<input type="checkbox" name="v29_1" value=10>、狂暴化<input type="checkbox" name="v29_2" value=10>、バトルメンバーシップ:<input type="checkbox" name="v29_3" value=1> <br>
             <br><br>
 
-            추가 크리티컬 대미지 <output id="v32"></output>%<br>
-            붉개,토템,낭농등의 합:<input type="text" id="v32_0" size="5" placeholder="0">%<br>
-            정령연마:<input type="checkbox" name="v32_1" value=15>,이보나평판:<input type="checkbox" name="v32_2" value=10>, 크리티컬 증가 세트:
+            追加クリティカルダメージ <output id="v32"></output>%<br>
+            赤改造、トーテム、栄養などの合計:<input type="text" id="v32_0" size="5" placeholder="0">%<br>
+            精霊研磨:<input type="checkbox" name="v32_1" value=15>、イヴォナ評判:<input type="checkbox" name="v32_2" value=10>、クリティカル増加セット:
             <input type="checkbox" name="v32_3" value=7></div><br>
-            
 
-            물공포 미적용: <output id="v35" onchange="cal(v35)"></output><br>
+
+            物攻ポーション未適用: <output id="v35" onchange="cal(v35)"></output><br>
         <div style="height: auto; width: 350px; border: 1px solid; padding:10px">
             <!-- 아르카나 링크(물공 보너스):
             <select name="v35_0" id="v35_0" style="background:#D9E5FF" onchange="cal(v35_0)">
@@ -152,7 +152,7 @@
                 <option value="20" >1</option>
                 <option value="0" >0</option>
             </select><br> -->
-            정령 육성레벨:
+            精霊育成レベル:
             <select name="v35_1" id="v35_1" style="background:#D9E5FF" onchange="cal(v35_1)">
                 <option value="20"  selected>5</option>
                 <option value="16" >4</option>
@@ -161,7 +161,7 @@
                 <option value="4" >1</option>
                 <option value="0" >0</option>
             </select><br>
-            정령제어레벨:
+            精霊制御レベル:
             <select name="v35_2" id="v35_2" style="background:#D9E5FF" onchange="cal(v35_2)">
                 <option value="30"  selected>5</option>
                 <option value="24" >4</option>
@@ -176,41 +176,41 @@
     </div>
 
     <div id="result">
-        결과
+        結果
         <input type="hidden" id="v29">
         <input type="hidden" id="v32">
         <br>
-        총 마법공격력:  <output id="res0" onchange="cal(res0)"></output><br>
+        総魔法攻撃力:  <output id="res0" onchange="cal(res0)"></output><br>
         <input type="hidden" id="res0">
         <!--현재값 저장을 누르면 현재값을 기억해 이후 계산값과 비교합니다. -->
         <br>
         <div style="font-weight: bold; height: auto; width: 350px; border: 1px solid; padding:10px;">
 
-            래피드파이어:
+            ラピッドファイア:
             <input type="text" id="res1" size="8" style="border:none;text-align: left "> <br>
-            크리티컬:
+            クリティカル:
             <input type="text" id="res1_1" size="8" style="border:none; text-align: left"> <br><br>
-            헤비 아틸러리:
+            ヘビーアーティラリー:
             <input type="text" id="res2" size="8" style="border:none; text-align: left"> <br>
-            크리티컬:
+            クリティカル:
             <input type="text" id="res2_1" size="8" style="border:none; text-align: left"> <br><br>
 
-            데바스테이션 캐논:
+            デヴァステーションキャノン:
             <input type="text" id="res3" size="8" style="border:none; text-align: left"> <br>
-            크리티컬:
+            クリティカル:
             <input type="text" id="res3_1" size="8" style="border:none; text-align: left"> <br><br>
 
-            페이탈 스코프:
+            フェイタルスコープ:
             <input type="text" id="res4" size="8" style="border:none; text-align: left"> <br>
-            크리티컬:
+            クリティカル:
             <input type="text" id="res4_1" size="8" style="border:none; text-align: left"> <br>
 
 
 
         </div>
 
-        <input type="button" value="계산하기" class="button" onclick="cal()">
-        <input type="button" value="초기화" class="button" onclick="reset()">
+        <input type="button" value="計算する" class="button" onclick="cal()">
+        <input type="button" value="リセット" class="button" onclick="reset()">
     </div>
 </div>
 

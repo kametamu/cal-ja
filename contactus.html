@@ -1,8 +1,11 @@
 <!-- forms -->
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ja">
+<head>
 <meta charset="UTF-8">
+<title>お問い合わせ</title>
 <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
 
 <body>
 
@@ -13,29 +16,29 @@
 
     <link rel="stylesheet" href="css/contacus.css">
     <div class="row">
-        <h1>문의하기</h1><br>
+        <h1>お問い合わせ</h1><br>
         <div class="form-group col-sm-6">
-            <label for="usr" class="blind">이름:</label>
-            <input type="text" class="form-control" id="usr" name="username" value="이름입력">
+            <label for="usr" class="blind">名前:</label>
+            <input type="text" class="form-control" id="usr" name="username" value="名前を入力">
         </div>
         <div class="form-group col-sm-6">
-            <label for="email" class="blind">답변 받을 이메일:</label>
+            <label for="email" class="blind">返信先のメールアドレス:</label>
             <input type="email" class="form-control" id="email" name="email" value="AAA@mabinogi.com">
         </div>
     </div>
 
     <div class="form-group">
-        <label for="comment" class="blind">문의 내용:</label><br>
-        <textarea class="form-control" rows="5" id="comment" name="message" placeholder="comment"></textarea>
+        <label for="comment" class="blind">お問い合わせ内容:</label><br>
+        <textarea class="form-control" rows="5" id="comment" name="message" placeholder="コメント"></textarea>
     </div>
 
 
-    <button type="submit" class="button">문의하기</button>
+    <button type="submit" class="button">送信</button>
 
 
     <div style="display:none" class="thankyou_message">
         <!-- You can customize the thankyou message by editing the code below -->
-        <h2>의견을 보내주셔서 감사합니다. 이 창은 2초 후 자동으로 닫힙니다.
+        <h2>ご意見をお送りいただきありがとうございます。このウィンドウは2秒後に自動的に閉じます。
         </h2>
     </div>
 

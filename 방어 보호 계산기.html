@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
-    <title>마비노기 방어 보호 계산기</title>
+    <title>マビノギ 防御・保護計算機</title>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -54,21 +54,21 @@
 
 <div id="wrapper">
     <div id="status1">
-        <h2>마비노기 방어 보호 계산기</h2>
-        본인의 방어와 보호로 보호받을 수 있는 대미지를 계산해 줍니다. <br>
-        결과의 대미지 차감비는 방어 보호를 모두 이용한 결과 입니다.<br>
-        대미지 역산은 맞은 대미지를 입력하면 원래 대미지를 추정해줍니다.<br>
-        마나실드의 랭크는 6랭기준입니다.마실효율은 마나1당 흡수하는 대미지 입니다.<br>
-        방보 식 계산의 소수점은 모두 버림합니다.  <br>
-        대미지 증가비는 방보깍이 없을때 대비 대미지증가 비입니다. <br>
-        피어싱이 적용되지 않은 상태에서 0대미지 상황에서는 피어싱 대미지 증가율을 계산할 수 없습니다.<br>
+        <h2>マビノギ 防御・保護計算機</h2>
+        自身の防御と保護で軽減できるダメージを計算します。<br>
+        結果のダメージ減少率は、防御と保護をすべて適用した値です。<br>
+        ダメージ逆算では、受けたダメージを入力すると元のダメージを推定します。<br>
+        マナシールドのランクは6ランク基準です。マナシールド効率はマナ1あたりで吸収するダメージです。<br>
+        防御・保護計算の小数点以下はすべて切り捨てられます。<br>
+        ダメージ増加率は、防御・保護減少がない場合と比べたダメージ増加率です。<br>
+        ピアシングが適用されていない状態で0ダメージになる場合は、ピアシングによるダメージ増加率を計算できません。<br>
 
 
         <br><br>
-        <label for="v1">(마법)방어:</label><input type="text" id="v1" size="5" placeholder="0"><br>
-        <label for="v2">(마법)보호:</label><input type="text" id="v2" size="5" placeholder="0"><br>
-        <label for="v5">디펜스:</label><select name="v5" id="v5" style="background:#D9E5FF">
-        <option value="0" value2="0" value3="0" value4="0">연습</option>
+        <label for="v1">(魔法)防御:</label><input type="text" id="v1" size="5" placeholder="0"><br>
+        <label for="v2">(魔法)保護:</label><input type="text" id="v2" size="5" placeholder="0"><br>
+        <label for="v5">ディフェンス:</label><select name="v5" id="v5" style="background:#D9E5FF">
+        <option value="0" value2="0" value3="0" value4="0">練習</option>
         <option value="20" value2="30" value3="5" value4="10">F</option>
         <option value="21" value2="31" value3="6" value4="11">E</option>
         <option value="22" value2="32" value3="7" value4="12">D</option>
@@ -84,66 +84,66 @@
         <option value="55" value2="65" value3="25" value4="37">3</option>
         <option value="60" value2="70" value3="30" value4="40">2</option>
         <option value="65" value2="80" value3="35" value4="45">1</option>
-        <option value="70" value2="90" value3="35" value4="45">1단</option>
-        <option value="75" value2="100" value3="35" value4="45">2단</option>
-        <option value="80" value2="110" value3="35" value4="45" selected> 3단</option>
+        <option value="70" value2="90" value3="35" value4="45">1段</option>
+        <option value="75" value2="100" value3="35" value4="45">2段</option>
+        <option value="80" value2="110" value3="35" value4="45" selected> 3段</option>
     </select><br>
-        방패착용:
+        盾装備:
         <select name="v9" id="v9" style="background:#D9E5FF">
-            <option value="1" selected>없음</option>
-            <option value="0.85">디바인실드</option>
-            <option value="0.8">센티널 실드 </option>
-            <option value="0.7">뱅가드 </option>
-            <option value="0.86">노던 실드 </option>
-            <option value="0.82">매시브 실드 </option>
+            <option value="1" selected>なし</option>
+            <option value="0.85">ディバインシールド</option>
+            <option value="0.8">センチネルシールド</option>
+            <option value="0.7">ヴァンガード</option>
+            <option value="0.86">ノーザンシールド</option>
+            <option value="0.82">マッシブシールド</option>
         </select><br>
-         <label for="v10">마법공격력:</label><input type="text" id="v10" size="5" placeholder="0"><br>
-        <label for="v11">마나실드세공레벨:</label><input type="text" id="v11" size="5" placeholder="0"><br>
-        마법무기:
+         <label for="v10">魔法攻撃力:</label><input type="text" id="v10" size="5" placeholder="0"><br>
+        <label for="v11">マナシールド細工レベル:</label><input type="text" id="v11" size="5" placeholder="0"><br>
+        魔法武器:
         <select name="v12" id="v12" style="background:#D9E5FF">
-            <option value="0" selected>없음</option>
-            <option value="1">일반마법무기</option>
-            <option value="1.5">힐링원드</option>
+            <option value="0" selected>なし</option>
+            <option value="1">一般魔法武器</option>
+            <option value="1.5">ヒーリングワンド</option>
         </select>
 
 
     </div>
     <br>
 
-    대미지: <input type="text" placeholder="대미지 입력" id="v3" name="v3" size="10"><br>
+    ダメージ: <input type="text" placeholder="ダメージを入力" id="v3" name="v3" size="10"><br>
 
 
 
     <br>
-    밀레시안
+    ミレシアン
     <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-        받는 대미지:<br>
+        受けるダメージ:<br>
         <output type="text" id="res10"> </output>
         x (100- <input type="text" id="res1" size="5" style="border:none;text-align: center;">)%
         - <input type="text" id="res2" size="5" style="border:none;text-align: left; "><br>
-        =<output type="text" placeholder="결과" id="res3"></output><br><br>
-        대미지 차감비
-        <output type="text" placeholder="결과" id="res4" size="5"></output>%<br><br>
-        대미지 역산
-        <input type="text" placeholder="받은대미지" id="v4" size="10"><br>
-        추정대미지 :
-        <output type="text" placeholder="결과" id="res5"></output>
+        =<output type="text" placeholder="結果" id="res3"></output><br><br>
+        ダメージ減少率
+        <output type="text" placeholder="結果" id="res4" size="5"></output>%<br><br>
+        ダメージ逆算
+        <input type="text" placeholder="受けたダメージ" id="v4" size="10"><br>
+        推定ダメージ:
+        <output type="text" placeholder="結果" id="res5"></output>
     </div>
     <br>
-    디펜스시 받는 대미지(방패크기적용 안됨)
+    ディフェンス時に受けるダメージ（盾サイズ補正なし）
     <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-        인간-엘프:
-        <input type="text" placeholder="결과" id="res6" size="8" style="border:none;text-align: left; "><br>
-        자이언트:
-        <input type="text" placeholder="결과" id="res7" size="8" style="border:none;text-align: left; ">
+        人間・エルフ:
+        <input type="text" placeholder="結果" id="res6" size="8" style="border:none;text-align: left; "><br>
+        ジャイアント:
+        <input type="text" placeholder="結果" id="res7" size="8" style="border:none;text-align: left; ">
     </div>
     <br>
     <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-    마나실드효율:<input type="text" placeholder="결과" id="res8" size="8" style="border:none;text-align: center; "><br>
-    마실대미지감소비율:<input type="text" placeholder="결과" id="res9" size="5" style="border:none;text-align: center; ">%<br>
+    マナシールド効率:<input type="text" placeholder="結果" id="res8" size="8" style="border:none;text-align: center; "><br>
+    マナシールドダメージ減少率:<input type="text" placeholder="結果" id="res9" size="5" style="border:none;text-align: center; ">%<br>
     </div><br>
 
-    나의 피어싱레벨:
+    自分のピアシングレベル:
     <select name="v13_1" id="v13_1" style="background:#D9E5FF">
         <option value="0"  value2="0" selected>0</option>
         <option value="5"  value2="6">1</option>
@@ -156,20 +156,20 @@
         <option value="40"  value2="70">8</option>
         <option value="45"  value2="80">9</option>
     </select><br>
-    방깍:<input type="text" placeholder="0" id="v14_2" size="5"style="border:none;text-align: left; ">합:<input type="text" placeholder="0" id="v14" size="5"style="border:none;text-align: left; "><br>
-    보깍: <input type="text" placeholder="0" id="v13_2" size="5"style="border:none;text-align: left; ">합:<input type="text" placeholder="0" id="v13" size="5"style="border:none;text-align: left; "><br>
+    防御減少:<input type="text" placeholder="0" id="v14_2" size="5"style="border:none;text-align: left; ">合計:<input type="text" placeholder="0" id="v14" size="5"style="border:none;text-align: left; "><br>
+    保護減少: <input type="text" placeholder="0" id="v13_2" size="5"style="border:none;text-align: left; ">合計:<input type="text" placeholder="0" id="v13" size="5"style="border:none;text-align: left; "><br>
     <br>
 
-    몬스터 
+    モンスター
     <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-        받는 대미지:<br>
+        受けるダメージ:<br>
         <output type="text" id="res11"> </output>
         x (100- <input type="text" id="res1m" size="5" style="border:none;text-align: center;">)%
         - <input type="text" id="res2m" size="5" style="border:none;text-align: left; "><br>
         =<output type="text"  id="res3m"></output><br><br>
-        대미지 차감비:
+        ダメージ減少率:
         <output type="text"  id="res4m"></output>%<br><br>
-        대미지 증가비:
+        ダメージ増加率:
         <output type="text"  id="res5m"></output>%<br>
 
     </div>
@@ -177,8 +177,8 @@
     <br>
 
 
-    <input type="button" value="계산하기" class="button" onclick="cal()">
-    <input type="button" value="초기화" class="button" onclick="reset()">
+    <input type="button" value="計算" class="button" onclick="cal()">
+    <input type="button" value="初期化" class="button" onclick="reset()">
 </div>
 </body>
 

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
-    <title>마비노기 너클 대미지 계산기</title>
+    <title>マビノギ ナックルダメージ計算機</title>
 
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -54,31 +54,31 @@
 
 <body>
 <div id="wrapper">
-    <h2>마비노기 너클대미지 계산기</h2>
+    <h2>マビノギ ナックルダメージ計算機</h2>
     <div id="status1">
-        본 계산기는 너클 스킬의 대미지를 계산합니다. <br>
+        この計算機はナックルスキルのダメージを計算します。<br>
     </div>
 
     <br><br>
     <div id="status">
 
-        종족:<br>
-        <input type="radio" name="v00" value="1" value1="0" value2="0" checked>인간
-        <input type="radio" name="v00" value="0" value1="1" value2="0">엘프
-        <input type="radio" name="v00" value="0" value1="0" value2="1">자이언트<br><br>
+        種族:<br>
+        <input type="radio" name="v00" value="1" value1="0" value2="0" checked>人間
+        <input type="radio" name="v00" value="0" value1="1" value2="0">エルフ
+        <input type="radio" name="v00" value="0" value1="0" value2="1">ジャイアント<br><br>
 
-        스텟<br>
+        ステータス<br>
         <div style="height: auto; width: 300px; border: 1px solid; padding:10px">
-            맥댐:
+            最大ダメージ:
             <input type="text" id="v0" size="5" placeholder="0"><br>
 
         </div>
         <br>
-        스킬랭크<br>
+        スキルランク<br>
         <div style="height: auto; width: 300px; border: 1px solid; padding:10px">
-            연속기 마스터리:
-            나<select name="v1" id="v1" style="background:#D9E5FF">
-                <option value="0.01" value2="0.01" value3="0.05" value4="0">연습</option>
+            連続技マスタリ:
+            <select name="v1" id="v1" style="background:#D9E5FF">
+                <option value="0.01" value2="0.01" value3="0.05" value4="0">練習</option>
                 <option value="0.05" value2="0.05" value3="0.06" value4="0">F</option>
                 <option value="0.06" value2="0.06" value3="0.07" value4="0">E</option>
                 <option value="0.07" value2="0.07" value3="0.08" value4="0">D</option>
@@ -96,7 +96,7 @@
                 <option value="0.3" value2="0.2" value3="0.4" value4="0.3" selected>1</option>
             </select><br>
             <br>
-            대시펀치:
+            ダッシュパンチ:
             <select name="v2" id="v2" style="background:#D9E5FF">
                 <option value="1.6">F</option>
                 <option value="1.7">E</option>
@@ -113,12 +113,12 @@
                 <option value="3.6" 6>3</option>
                 <option value="3.8">2</option>
                 <option value="4">1</option>
-                <option value="4.2">1단</option>
-                <option value="4.4">2단</option>
-                <option value="4.6" selected>3단</option>
+                <option value="4.2">1段</option>
+                <option value="4.4">2段</option>
+                <option value="4.6" selected>3段</option>
             </select><br>
 
-            스크류어퍼:
+            スクリューアッパー:
             <select name="v3" id="v3" style="background:#D9E5FF">
                 <option value="2.7">F</option>
                 <option value="2.9">E</option>
@@ -135,11 +135,11 @@
                 <option value="5.4" 6>3</option>
                 <option value="5.7">2</option>
                 <option value="6">1</option>
-                <option value="6.3">1단</option>
-                <option value="6.6">2단</option>
-                <option value="6.9" selected>3단</option>
+                <option value="6.3">1段</option>
+                <option value="6.6">2段</option>
+                <option value="6.9" selected>3段</option>
             </select><br>
-            드롭킥:
+            ドロップキック:
             <select name="v4" id="v4" style="background:#D9E5FF">
                 <option value="3.2">F</option>
                 <option value="3.4">E</option>
@@ -158,7 +158,7 @@
                 <option value="8" selected>1</option>
             </select><br>
 
-            차징피스트:
+            チャージングフィスト:
             <select name="v5" id="v5" style="background:#D9E5FF">
                 <option value="1.6">F</option>
                 <option value="1.7">E</option>
@@ -177,7 +177,7 @@
                 <option value="4" selected>1</option>
             </select><br>
 
-            섬머솔트:
+            サマーソルト:
             <select name="v6" id="v6" style="background:#D9E5FF">
                 <option value="2.8">F</option>
                 <option value="3.1">E</option>
@@ -196,7 +196,7 @@
                 <option value="7" selected>1</option>
             </select><br>
 
-            파운딩:
+            パウンディング:
             <select name="v7" id="v7" style="background:#D9E5FF">
                 <option value="4.1">F</option>
                 <option value="4.2">E</option>
@@ -213,131 +213,131 @@
                 <option value="6.8" 6>3</option>
                 <option value="7">2</option>
                 <option value="9">1</option>
-                <option value="9.3">1단</option>
-                <option value="9.6">2단</option>
-                <option value="10" selected>3단</option>
+                <option value="9.3">1段</option>
+                <option value="9.6">2段</option>
+                <option value="10" selected>3段</option>
             </select><br>
         </div>
         <br>
 
-        아이템, 타이틀
+        アイテム・タイトル
         <div style="height: auto; width: 300px; border: 1px solid; padding:10px">
-            무기:
+            武器:
             <select name="v18" id="v18" style="background:#D9E5FF">
-                <option value="0" value1="0" value2="0" selected>일반너클</option>
-                <option value="0.45" value1="0" value2="0.6">레버너클</option>
-                <option value="0.65" value1="0" value2="0.8">페러너클</option>
-                <option value="0.65" value1="0.15" value2="0">베가본드</option>
+                <option value="0" value1="0" value2="0" selected>一般ナックル</option>
+                <option value="0.45" value1="0" value2="0.6">レバー ナックル</option>
+                <option value="0.65" value1="0" value2="0.8">フェラル ナックル</option>
+                <option value="0.65" value1="0.15" value2="0">ベガボンド</option>
             </select><br>
 
-            S에르그:
+            Sエルグ:
             <select name="v28" id="v28" style="background:#D9E5FF">
-                <option value="0" selected>35이하</option>
+                <option value="0" selected>35以下</option>
                 <option value="0.17">35</option>
                 <option value="0.34">40</option>
                 <option value="0.66">45</option>
                 <option value="1">50</option>
             </select><br>
 
-            타이틀:
+            タイトル:
             <select name="v19" id="v19" style="background:#D9E5FF">
-                <option value="0" value2="0" value3="0" selected>없음</option>
-                <option value="1" value2="0" value3="0">대시펀치 마스터</option>
-                <option value="0" value2="1" value3="0">어퍼컷 마스터</option>
-                <option value="0" value2="0" value3="1">드롭킥 마스터</option>
+                <option value="0" value2="0" value3="0" selected>なし</option>
+                <option value="1" value2="0" value3="0">ダッシュパンチ マスター</option>
+                <option value="0" value2="1" value3="0">アッパーカット マスター</option>
+                <option value="0" value2="0" value3="1">ドロップキック マスター</option>
             </select><br>
 
-            중갑옷:
-            <input type="radio" name="v29" id="v29" value="1" checked>미적용
-            <input type="radio" name="v29" id="v29_1" value="0">적용<br><br>
+            重鎧:
+            <input type="radio" name="v29" id="v29" value="1" checked>未適用
+            <input type="radio" name="v29" id="v29_1" value="0">適用<br><br>
 
 
         </div>
-        세공
+        細工
         <div style="height: auto; width: 300px; border: 1px solid; padding:10px">
-            연속기 대미지:
-            <input type="text" id="v22" size="5" placeholder="0">레벨 <br>
-            대시펀치 대미지:
-            <input type="text" id="v23" size="5" placeholder="0">레벨 <br>
-            어퍼컷 대미지 :
-            <input type="text" id="v24" size="5" placeholder="0">레벨 <br>
-            드롭킥 대미지:
-            <input type="text" id="v25" size="5" placeholder="0">레벨 <br>
-            차징피스트 대미지:
-            <input type="text" id="v31" size="5" placeholder="0">레벨 <br>
-            섬머솔트 대미지:
-            <input type="text" id="v26" size="5" placeholder="0">레벨 <br>
-            파운딩 대미지:
-            <input type="text" id="v27" size="5" placeholder="0">레벨 <br>
+            連続技ダメージ:
+            <input type="text" id="v22" size="5" placeholder="0">レベル <br>
+            ダッシュパンチ ダメージ:
+            <input type="text" id="v23" size="5" placeholder="0">レベル <br>
+            アッパーカット ダメージ:
+            <input type="text" id="v24" size="5" placeholder="0">レベル <br>
+            ドロップキック ダメージ:
+            <input type="text" id="v25" size="5" placeholder="0">レベル <br>
+            チャージングフィスト ダメージ:
+            <input type="text" id="v31" size="5" placeholder="0">レベル <br>
+            サマーソルト ダメージ:
+            <input type="text" id="v26" size="5" placeholder="0">レベル <br>
+            パウンディング ダメージ:
+            <input type="text" id="v27" size="5" placeholder="0">レベル <br>
         </div>
         <br>
-        콤보카드 비율(%):<br>
+        コンボカード倍率(%):<br>
         <div style="height: auto; width: 300px; border: 1px solid; padding:10px">
-            대시펀치:
+            ダッシュパンチ:
             <input type="text" id="v11" size="5" placeholder="0">% <br>
-            어퍼컷:
+            アッパーカット:
             <input type="text" id="v12" size="5" placeholder="0">% <br>
-            드롭킥:
+            ドロップキック:
             <input type="text" id="v13" size="5" placeholder="0">% <br>
-            차징피스트:
+            チャージングフィスト:
             <input type="text" id="v14" size="5" placeholder="0">% <br>
-            섬머솔트:
+            サマーソルト:
             <input type="text" id="v15" size="5" placeholder="0">% <br>
-            파운딩:
+            パウンディング:
             <input type="text" id="v16" size="5" placeholder="0">% <br>
 
         </div>
         <br>
 
 
-        도핑
+        ドーピング
         <div style="height: auto; width: 300px; border: 1px solid; padding:10px">
 
-            전장 비율%:
+            戦場の序曲%:
             <input type="text" id="v8" size="5" placeholder="0"> <br>
-            물공포:
-            <input type="radio" name="v17" id="v17" value="1" checked>미적용
-            <input type="radio" name="v17" id="v17_1" value="0">적용<br><br>
+            物理保護無視:
+            <input type="radio" name="v17" id="v17" value="1" checked>未適用
+            <input type="radio" name="v17" id="v17_1" value="0">適用<br><br>
 
         </div>
         <br>
 
-        보너스 대미지%(낭농,토템,정령등)
+        ボーナスダメージ%(農場、トーテム、精霊など)
         <input type="text" id="v10" size="5" placeholder="0"><br>
-        추가 크리%(특개,이보나,낭농)
+        追加クリティカル%(特別改造、イボナ、農場)
         <input type="text" id="v9" size="5" placeholder="0">
 
     </div>
 
     <div id="result">
-        결과
+        結果
         <br>
-        <!--현재값 저장을 누르면 현재값을 기억해 이후 계산값과 비교합니다. -->
+        <!--現在値保存を押すと現在値を記憶し、以後の計算結果と比較します。 -->
         <input type="hidden" id="res0">
         <div style="font-weight: normal; height: auto; width: 350px; border: 1px solid; padding:10px;">
-            <b>대시펀치</b><br>
-            대미지:<input type="text" id="res1" size="8" style="border:none;text-align: left; ">
-            크리: <input type="text" id="res1c" size="8" style="border:none;text-align: left; ">
+            <b>ダッシュパンチ</b><br>
+            ダメージ:<input type="text" id="res1" size="8" style="border:none;text-align: left; ">
+            クリティカル: <input type="text" id="res1c" size="8" style="border:none;text-align: left; ">
             <br><br>
-            <b>어퍼컷</b><br>
-            대미지:<input type="text" id="res2" size="8" style="border:none;text-align: left; ">
-            크리: <input type="text" id="res2c" size="8" style="border:none;text-align: left; ">
+            <b>アッパーカット</b><br>
+            ダメージ:<input type="text" id="res2" size="8" style="border:none;text-align: left; ">
+            クリティカル: <input type="text" id="res2c" size="8" style="border:none;text-align: left; ">
             <br><br>
-            <b>드롭킥</b><br>
-            대미지:<input type="text" id="res3" size="8" style="border:none;text-align: left; ">
-            크리: <input type="text" id="res3c" size="8" style="border:none;text-align: left; ">
+            <b>ドロップキック</b><br>
+            ダメージ:<input type="text" id="res3" size="8" style="border:none;text-align: left; ">
+            クリティカル: <input type="text" id="res3c" size="8" style="border:none;text-align: left; ">
             <br><br>
-            <b>차징피스트</b><br>
-            대미지:<input type="text" id="res4" size="8" style="border:none;text-align: left; ">
-            크리: <input type="text" id="res4c" size="8" style="border:none;text-align: left; ">
+            <b>チャージングフィスト</b><br>
+            ダメージ:<input type="text" id="res4" size="8" style="border:none;text-align: left; ">
+            クリティカル: <input type="text" id="res4c" size="8" style="border:none;text-align: left; ">
             <br><br>
-            <b>섬머솔트</b><br>
-            대미지:<input type="text" id="res5" size="8" style="border:none;text-align: left; ">
-            크리: <input type="text" id="res5c" size="8" style="border:none;text-align: left; ">
+            <b>サマーソルト</b><br>
+            ダメージ:<input type="text" id="res5" size="8" style="border:none;text-align: left; ">
+            クリティカル: <input type="text" id="res5c" size="8" style="border:none;text-align: left; ">
             <br><br>
-            <b>파운딩</b><br>
-            대미지:<input type="text" id="res6" size="8" style="border:none;text-align: left; ">
-            크리: <input type="text" id="res6c" size="8" style="border:none;text-align: left; ">
+            <b>パウンディング</b><br>
+            ダメージ:<input type="text" id="res6" size="8" style="border:none;text-align: left; ">
+            クリティカル: <input type="text" id="res6c" size="8" style="border:none;text-align: left; ">
             <br>
 
 
@@ -345,8 +345,8 @@
         </div>
 
 
-        <input type="button" value="계산하기" class="button" onclick="cal()">
-        <input type="button" value="초기화" class="button" onclick="reset()">
+        <input type="button" value="計算" class="button" onclick="cal()">
+        <input type="button" value="初期化" class="button" onclick="reset()">
     </div>
 </div>
 <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
-    <title>볼트조합 대미지 비교</title>
+    <title>ボルトコンビネーション ダメージ比較</title>
     <link rel="stylesheet" href="css/cont.css">
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -60,12 +60,12 @@
             var v53 = Number(document.getElementById("v53").value); // 파볼트최댐
             var v4 = Number(document.getElementById("v4").value); // 라볼트최댐
             var v54 = Number(document.getElementById("v54").value); // 라볼트최댐
-            var v5 = Number(document.getElementById("v5").value); // 파이어마스터리
-            var v55 = Number(document.getElementById("v55").value); // 파이어마스터리
-            var v6 = Number(document.getElementById("v6").value); // 라이트닝마스터리
-            var v56 = Number(document.getElementById("v56").value); // 라이트닝마스터리
-            var v7 = Number(document.getElementById("v7").value); // 볼트마스터리
-            var v57 = Number(document.getElementById("v57").value); // 볼트마스터리
+            var v5 = Number(document.getElementById("v5").value); // ファイアマスタリー
+            var v55 = Number(document.getElementById("v55").value); // ファイアマスタリー
+            var v6 = Number(document.getElementById("v6").value); // ライトニングマスタリー
+            var v56 = Number(document.getElementById("v56").value); // ライトニングマスタリー
+            var v7 = Number(document.getElementById("v7").value); // ボルトマスタリー
+            var v57 = Number(document.getElementById("v57").value); // ボルトマスタリー
             var v8 = Number(document.getElementById("v8").value); // 볼트조합
             var v58 = Number(document.getElementById("v58").value); // 볼트조합
             var v9 = Number(document.getElementById("v9").value); //헤보나
@@ -293,107 +293,107 @@
 
 <body>
     <div id="wrapper">
-        <h2>마비노기 볼트조합 대미지 비교.</h2>
+        <h2>マビノギ ボルトコンビネーション ダメージ比較</h2>
         <div id="status1">
-            해당 계산기에 적용되는 모든 마법 및 패시브의 랭크는 최고랭크 기준입니다. <br>
-            각 항목의 앞쪽과 뒷쪽의 수치를 입력하고 계산하기를 누르면 대미지 차이를 비교합니다.<br>
+            この計算機で適用されるすべての魔法およびパッシブのランクは最高ランクが前提です。<br>
+            各項目の前後にある数値を入力して「計算する」を押すと、ダメージ差を比較します。<br>
 
         </div>
         <br><br>
         <div id="status">
-            스텟(빨강 본섭, 파랑 테썹)<br>
+            ステータス（赤: 本サーバー、青: テストサーバー）<br>
             <div style="height: auto; width:  350px; border: 1px solid; padding:10px">
-                마법공격력:
+                魔法攻撃力:
                 <input type="text" id="v1" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v51" size="5" placeholder="0" style="background-color:#D9E5FF ;"><br>
-                최댐인챈트+낭농최댐:
+                最大ダメージエンチャント＋栄養最大ダメージ:
                 <input type="text" id="v2" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v52" size="5" placeholder="0" style="background-color:#D9E5FF ;">
             </div>
             <br><br>
-            세공<br>
-            <span style="font-size:5px; color: red;">*마기그래프는 세공과 합연산이므로 더해서 사용하시면 됩니다.</span><br>
+            細工<br>
+            <span style="font-size:5px; color: red;">＊マギグラフは細工と加算なので合計してご使用ください。</span><br>
             <div style="height: auto; width: 350px; border: 1px solid; padding:10px">
-                파이어볼트최댐 세공LV:
+                ファイアボルト最大ダメージ 細工LV:
                 <input type="text" id="v3" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v53" size="5" placeholder="0" style="background-color:#D9E5FF ;"><br>
-                라이트닝볼트최댐 세공LV:
+                ライトニングボルト最大ダメージ 細工LV:
                 <input type="text" id="v4" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v54" size="5" placeholder="0" style="background-color:#D9E5FF ;"> <br>
-                파이어마스터리 세공LV:
+                ファイアマスタリー 細工LV:
                 <input type="text" id="v5" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v55" size="5" placeholder="0" style="background-color:#D9E5FF ;"><br>
-                라이트닝마스터리 세공LV:
+                ライトニングマスタリー 細工LV:
                 <input type="text" id="v6" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v56" size="5" placeholder="0" style="background-color:#D9E5FF ;"><br>
-                원드 영향력 세공LV:
+                ワンド影響力 細工LV:
                 <input type="text" id="v20" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v520" size="5" placeholder="0" style="background-color:#D9E5FF ;"><br>
-                볼트마스터리 세공LV:
+                ボルトマスタリー 細工LV:
                 <input type="text" id="v7" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v57" size="5" placeholder="0" style="background-color:#D9E5FF ;"><br>
-                볼트조합마스터리 세공LV:
+                ボルトコンビネーションマスタリー 細工LV:
                 <input type="text" id="v8" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v58" size="5" placeholder="0" style="background-color:#D9E5FF ;"><br><br>
-                헤보나세트:
+                ヘボナセット:
                 <select name="v9" id="v9" style="background:#FFd8d8 ">
-                    <option value="0" selected>미적용</option>
-                    <option value="1">적용</option>
+                    <option value="0" selected>未適用</option>
+                    <option value="1">適用</option>
                 </select>
                 <select name="v59" id="v59" style="background:#D9E5FF">
-                    <option value="0" selected>미적용</option>
-                    <option value="1">적용</option>
+                    <option value="0" selected>未適用</option>
+                    <option value="1">適用</option>
                 </select><br>
-                블리안세트:
+                ブリアンセット:
                 <select name="v19" id="v19" style="background:#FFd8d8 ">
-                    <option value="0" selected>미적용</option>
-                    <option value="1">적용</option>
+                    <option value="0" selected>未適用</option>
+                    <option value="1">適用</option>
                 </select>
                 <select name="v519" id="v519" style="background:#D9E5FF">
-                    <option value="0" selected>미적용</option>
-                    <option value="1">적용</option>
+                    <option value="0" selected>未適用</option>
+                    <option value="1">適用</option>
                 </select><br>
 
-                무기강화효과:
+                武器強化効果:
                 <select name="v18" id="v18" style="background:#FFd8d8">
-                    <option value="0" value2="0" selected>미적용</option>
-                    <option value="35" value2="1">엘리멘토</option>
-                    <option value="20" value2="0">아케인</option>
-                    <option value="0.8" value2="0">심볼1</option>
-                    <option value="1.6" value2="0">심볼2</option>
-                    <option value="2.4" value2="0">심볼3</option>
-                    <option value="3.2" value2="0">심볼4</option>
-                    <option value="4.0" value2="0">심볼5</option>
-                    <option value="4.8" value2="0">심볼6</option>
-                    <option value="5.6" value2="0">심볼7</option>
-                    <option value="6.4" value2="0">심볼8</option>
-                    <option value="7.2" value2="0">심볼9</option>
-                    <option value="8" value2="0">심볼10</option>
+                    <option value="0" value2="0" selected>未適用</option>
+                    <option value="35" value2="1">エレメント</option>
+                    <option value="20" value2="0">アーケイン</option>
+                    <option value="0.8" value2="0">シンボル1</option>
+                    <option value="1.6" value2="0">シンボル2</option>
+                    <option value="2.4" value2="0">シンボル3</option>
+                    <option value="3.2" value2="0">シンボル4</option>
+                    <option value="4.0" value2="0">シンボル5</option>
+                    <option value="4.8" value2="0">シンボル6</option>
+                    <option value="5.6" value2="0">シンボル7</option>
+                    <option value="6.4" value2="0">シンボル8</option>
+                    <option value="7.2" value2="0">シンボル9</option>
+                    <option value="8" value2="0">シンボル10</option>
                 </select>
 
                 <select name="v518" id="v518" style="background:#D9E5FF">
-                    <option value="0" value2="0" selected>미적용</option>
-                    <option value="35" value2="1">엘리멘토</option>
-                    <option value="20" value2="0">아케인</option>
-                    <option value="0.8" value2="0">심볼1</option>
-                    <option value="1.6" value2="0">심볼2</option>
-                    <option value="2.4" value2="0">심볼3</option>
-                    <option value="3.2" value2="0">심볼4</option>
-                    <option value="4.0" value2="0">심볼5</option>
-                    <option value="4.8" value2="0">심볼6</option>
-                    <option value="5.6" value2="0">심볼7</option>
-                    <option value="6.4" value2="0">심볼8</option>
-                    <option value="7.2" value2="0">심볼9</option>
-                    <option value="8" value2="0">심볼10</option>
+                    <option value="0" value2="0" selected>未適用</option>
+                    <option value="35" value2="1">エレメント</option>
+                    <option value="20" value2="0">アーケイン</option>
+                    <option value="0.8" value2="0">シンボル1</option>
+                    <option value="1.6" value2="0">シンボル2</option>
+                    <option value="2.4" value2="0">シンボル3</option>
+                    <option value="3.2" value2="0">シンボル4</option>
+                    <option value="4.0" value2="0">シンボル5</option>
+                    <option value="4.8" value2="0">シンボル6</option>
+                    <option value="5.6" value2="0">シンボル7</option>
+                    <option value="6.4" value2="0">シンボル8</option>
+                    <option value="7.2" value2="0">シンボル9</option>
+                    <option value="8" value2="0">シンボル10</option>
                 </select><br>
-                에르그:
+                エルグ:
                 <select name="v21" id="v21" style="background:#FFd8d8">
-                    <option value="0" selected>미적용</option>
+                    <option value="0" selected>未適用</option>
                     <option value="10">s50</option>
                 </select>
 
                 <select name="v521" id="v521" style="background:#D9E5FF">
-                    <option value="0" selected>미적용</option>
+                    <option value="0" selected>未適用</option>
                     <option value="10">s50</option>
                 </select>
             </div>
@@ -402,52 +402,52 @@
 
 
             <br><br>
-            볼트조합 마스터 타이틀:
+            ボルトコンビネーションマスタータイトル:
             <select name="v15" id="v15" style="background:#FFd8d8 ">
-                <option value="0" selected>미적용</option>
-                <option value="1">적용</option>
+                <option value="0" selected>未適用</option>
+                <option value="1">適用</option>
             </select>
             <select name="v515" id="v515" style="background:#D9E5FF">
-                <option value="0" selected>미적용</option>
-                <option value="1">적용</option>
+                <option value="0" selected>未適用</option>
+                <option value="1">適用</option>
             </select>
             <br><br>
-            추가크리 대미지%(이보나, 붉개등)
+            追加クリティカルダメージ％（イヴォナ、赤改造など）
             <input type="text" id="v10" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input type="text"
                 id="v510" size="5" placeholder="0" style="background-color:#D9E5FF ;"><br><br>
-            추가 대미지%(낭농,토템,정령등)
+            追加ダメージ％（栄養、トーテム、精霊など）
             <input type="text" id="v17" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input type="text"
                 id="v517" size="5" placeholder="0" style="background-color:#D9E5FF ;">
             <br><br>
 
-            도핑<br>
+            ドーピング<br>
             <div style="height: auto; width:  350px; border: 1px solid; padding:10px">
-                전장(비바체)비율%:
+                戦場（ビバーチェ）比率％:
                 <input type="text" id="v13" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v513" size="5" placeholder="0" style="background-color:#D9E5FF ;"> <br>
-                최대공격력:
+                最大攻撃力:
                 <input type="text" id="v14" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v514" size="5" placeholder="0" style="background-color:#D9E5FF ;"><br>
-                물리(마법)공격력 증가포션:
+                物理（魔法）攻撃力増加ポーション:
                 <select name="v16" id="v16" style="background:#FFd8d8 ">
-                    <option value="0" selected>미적용</option>
-                    <option value="1">적용</option>
+                    <option value="0" selected>未適用</option>
+                    <option value="1">適用</option>
                 </select>
                 <select name="v516" id="v516" style="background:#D9E5FF">
-                    <option value="0" selected>미적용</option>
-                    <option value="1">적용</option>
+                    <option value="0" selected>未適用</option>
+                    <option value="1">適用</option>
                 </select>
             </div>
             <br><br>
 
 
-            콤보카드%(라파라파 일경우 동시입력)
+            コンボカード％（ラパラパの場合は同時入力）
             <br>
             <div style="height: auto; width:  350px; border: 1px solid; padding:10px">
-                파볼트콤보카드%:
+                パボルトコンボカード％:
                 <input type="text" id="v11" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v511" size="5" placeholder="0" style="background-color:#D9E5FF ;"><br>
-                라볼트콤보카드%:
+                ラボルトコンボカード％:
                 <input type="text" id="v12" size="5" placeholder="0" style="background-color:#FFd8d8 ;"> <input
                     type="text" id="v512" size="5" placeholder="0" style="background-color:#D9E5FF ;">
             </div>
@@ -456,59 +456,59 @@
 
 
         <div id="result">
-            결과
+            結果
             <input type="hidden" id="v18_1">
             <input type="hidden" id="v518_1">
             <br>
-            결과는 기존 대미지와 대미지의 증가량을 보여줍니다.
+            結果は既存のダメージと増加量を表示します。
             <br>
             <div style="font-weight: bold; height: auto; width:  350px; border: 1px solid; padding:10px;">
-                파이어볼트5차지 <br>
-                대미지:
+                ファイアボルト5チャージ <br>
+                ダメージ:
                 <input type="text" id="res1" size="10" style="background-color:#FFd8d8 ;"> , <input type="text"
                     id="res8" size="10">
                 <br>
-                크리:
+                クリティカル:
                 <input type="text" id="res5" size="10" style="background-color:#FFd8d8 ;"> , <input type="text"
                     id="res11" size="10">
                 <br>
-                테섭/본썹(%):
+                テスト/本サーバー（％）:
                 <input type="text" id="res14" size="10"><br>
-                크리 테썹/본썹(%):
+                クリティカル テスト/本サーバー（％）:
                 <input type="text" id="res17" size="10">
                 <br>
                 <br>
-                볼트조합3차지 <br>
-                대미지:
+                ボルトコンビネーション3チャージ <br>
+                ダメージ:
                 <input type="text" id="res3" size="10" style="background-color:#FFd8d8 ;"> , <input type="text"
                     id="res9" size="10"><br>
-                크리:
+                クリティカル:
                 <input type="text" id="res6" size="10" style="background-color:#FFd8d8 ;"> ,<input type="text"
                     id="res12" size="10">
                 <br>
-                테섭/본썹(%):
+                テスト/本サーバー（％）:
                 <input type="text" id="res15" size="10"><br>
-                크리 테썹/본썹(%):
+                クリティカル テスト/本サーバー（％）:
                 <input type="text" id="res18" size="10">
                 <br><br>
 
-                볼트조합5차지 <br>
-                대미지:
+                ボルトコンビネーション5チャージ <br>
+                ダメージ:
                 <input type="text" id="res4" size="10" style="background-color:#FFd8d8 ;"> , <input type="text"
                     id="res10" size="10"><br>
-                크리:
+                クリティカル:
                 <input type="text" id="res7" size="10" style="background-color:#FFd8d8 ;"> , <input type="text"
                     id="res13" size="10"><br>
-                테섭/본썹(%):
+                テスト/本サーバー（％）:
                 <input type="text" id="res16" size="10"><br>
-                크리 테썹/본썹(%):
+                クリティカル テスト/本サーバー（％）:
                 <input type="text" id="res19" size="10">
             </div>
             <br> <br>
 
 
-            <input type="button" value="계산하기" class="button" onclick="cal()">
-            <input type="button" value="초기화" class="button" onclick="reset()">
+            <input type="button" value="計算する" class="button" onclick="cal()">
+            <input type="button" value="リセット" class="button" onclick="reset()">
         </div>
     </div>
 

@@ -70,11 +70,11 @@ function cal() {
 
     var res7; //환산대미지 비
     if (res3 < res6) {
-        res7 = "붉개 승!"
+        res7 = "赤改造が優勢!"
     } else if (res3 == res6) {
-        res7 = "똑같음"
+        res7 = "同じ結果"
     } else {
-        res7 = "푸개 승!"
+        res7 = "青改造が優勢!"
     }
     document.getElementById("res7").value = res7;
 }

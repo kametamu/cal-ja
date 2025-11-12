@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
-    <title>도르카 계산기</title>
+    <title>ドルカ計算機</title>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -52,15 +52,15 @@
 
 <body>
 
-<div id="wrapper">
+    <div id="wrapper">
     <div id="status1">
-        <h2>마비노기 도르카 계산기</h2>
-        1타 도르카획득 갯수를 계산해 줍니다.  <br>
+        <h2>マビノギ ドルカ計算機</h2>
+        1打ごとのドルカ獲得数を計算します。<br>
 
         <br><br>
         <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-            도르카 스내치 랭크:<select name="v1" id="v1" style="background:#D9E5FF">
-            <option value="0">연습</option>
+            ドルカスナッチランク:<select name="v1" id="v1" style="background:#D9E5FF">
+            <option value="0">練習</option>
             <option value="0">F</option>
             <option value="0.1">E</option>
             <option value="0.1">D</option>
@@ -78,19 +78,19 @@
             <option value="0.5" selected>1</option>
         </select><br>
 
-        체인에르그:
+        チェーンエナジー:
         <select name="v2" id="v2" style="background:#D9E5FF">
-            <option value="0"selected>없음</option>
+            <option value="0"selected>なし</option>
             <option value="0.4" >A50</option>
             <option value="0.53">S45</option>
             <option value="0.8">S50</option>
         </select><br>
 
-            도르카세공 레벨:<input type="text" id="v3" size="5" placeholder="0"><br>
-            다크메이지 링크효과 :<input type="checkbox" name="v4" value=0.2><br>
-            도르카 마스터 타이틀:<input type="checkbox" name="v5" value=0.1><br>
-            어둠을 가르는 2차 타이틀:<input type="checkbox" name="v6" value=1.1><br>
-            에아렌세트효과:<input type="checkbox" name="v7" value=0.1><br>
+            ドルカ細工レベル:<input type="text" id="v3" size="5" placeholder="0"><br>
+            ダークメイジリンク効果:<input type="checkbox" name="v4" value=0.2><br>
+            ドルカマスタータイトル:<input type="checkbox" name="v5" value=0.1><br>
+            闇を切り裂く2次タイトル:<input type="checkbox" name="v6" value=1.1><br>
+            エアレンセット効果:<input type="checkbox" name="v7" value=0.1><br>
 
         </div>
 
@@ -98,9 +98,9 @@
 
     <br>
 
-   도르카 계산: <br>
+   ドルカ計算: <br>
     <div style="height: auto; width: 250px; border: 1px solid; padding:10px">
-        1타당 도르카 획득량 :<output type="text"  id="res1" size="8">   </output>개<br>
+        1打あたりのドルカ獲得量 :<output type="text"  id="res1" size="8">   </output>個<br>
         <!-- 랜스차지 크리티컬 대미지:<br>
         <input type="text" placeholder="결과" id="res3" size="8" style="border:none;text-align: left; "><br><br> -->
 
@@ -111,8 +111,8 @@
     <br>
 
 
-    <input type="button" value="계산하기" class="button" onclick="cal()">
-    <input type="button" value="초기화" class="button" onclick="reset()">
+    <input type="button" value="計算する" class="button" onclick="cal()">
+    <input type="button" value="リセット" class="button" onclick="reset()">
 </div>
 
 <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>

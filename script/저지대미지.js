@@ -221,13 +221,13 @@ function cal() {
 
     var res6; //디펜스적용(자)
     if (res5_1 < 550000 && res5 < 550000) {
-        res6 = "한방안나옴"}
-    else if (res5 < 550000 && res5_1 > 550000) {
-    res6 = "확률한방"}
-else  {
-   res6 = "확정한방"
-}
-document.getElementById("res6").value = res6;
+        res6 = "一撃不可";
+    } else if (res5 < 550000 && res5_1 > 550000) {
+        res6 = "一撃の可能性あり";
+    } else {
+        res6 = "一撃確定";
+    }
+    document.getElementById("res6").value = res6;
 
 }
 
