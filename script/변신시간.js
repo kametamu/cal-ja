@@ -23,7 +23,7 @@ function cal() {
     document.getElementById("transformDuration").value = resultStr;
 }
 
-//리셋
+//リセット
 function reset() {
     document.getElementById("rebirthCount").value = "";
     document.getElementById("age").value = "17";
