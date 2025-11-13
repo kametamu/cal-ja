@@ -97,7 +97,7 @@ const customGradientPlugin = {
         }
     },
     afterDatasetsDraw(chart) {
-        // 기본 데이터셋의 선을 지워서 겹치지 않게 함
+        // 基本データセットの線を消して重ならないようにする
         chart.getDatasetMeta(0).controller.draw();
     }
 };

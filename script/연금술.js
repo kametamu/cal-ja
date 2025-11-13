@@ -1,33 +1,33 @@
 function cal() {
 
-    //변수
-    //기본댐
-    var v1 = $("#v1 option:selected").attr('value'); // 플레이머 랭크 기본대미지 
-    var v2 = Number(document.getElementById("v2").value); // 생명력 2500까지
-    var v3 = Number(document.getElementById("v3").value); // 불연댐
-    var v4 = $("#v4 option:selected").attr('value'); // 차지수
-    var v5 = Number(document.getElementById("v5").value); // 대미지인챈트
-    var v6 = Number(document.getElementById("v6").value); // 최대대미지
-    var v7 = Number(document.getElementById("v7").value); // 전장비율
+    //変数
+    //基本ダメージ
+    var v1 = $("#v1 option:selected").attr('value'); // フレイマーランク基本ダメージ 
+    var v2 = Number(document.getElementById("v2").value); // 生命力2500まで
+    var v3 = Number(document.getElementById("v3").value); // 火錬金ダメージ
+    var v4 = $("#v4 option:selected").attr('value'); // チャージ数
+    var v5 = Number(document.getElementById("v5").value); // ダメージエンチャント
+    var v6 = Number(document.getElementById("v6").value); // 最大ダメージ
+    var v7 = Number(document.getElementById("v7").value); // 戦場割合
 
-    //크리
-    var v8 = Number(document.getElementById("v8").value); // 추가크리
+    //クリ
+    var v8 = Number(document.getElementById("v8").value); // 追加クリ
 
-    //추가댐
-    var v9 = $("#v1 option:selected").attr('value2'); // 플레이머 랭크 추가뎀
-    var v10 = $("#v10 option:selected").attr('value'); // 연금술 마스터리 보너스
-    var v11 = $("#v11 option:selected").attr('value'); // 불 연금술 마스터리 보너스
-    var v20 = $("#v12 option:selected").attr('value2'); // 실린더 추가보정
+    //追加ダメージ
+    var v9 = $("#v1 option:selected").attr('value2'); // フレイマーランク追加ダメージ
+    var v10 = $("#v10 option:selected").attr('value'); // 錬金術マスタリーボーナス
+    var v11 = $("#v11 option:selected").attr('value'); // 火錬金術マスタリーボーナス
+    var v20 = $("#v12 option:selected").attr('value2'); // シリンダー追加補正
 
     
-    //마지막에 곱연산
-    var v12 = $("#v12 option:selected").attr('value'); // 실린더 보정
+    // 最後に乗算
+    var v12 = $("#v12 option:selected").attr('value'); // シリンダー補正
 
-    //콤보카드
-    var v13 = Number(document.getElementById("v13").value); //플머콤카
+    //コンボカード
+    var v13 = Number(document.getElementById("v13").value); //フレイマーコンボカード
 
-    //아이템 타이틀
-    var v14v = document.getElementsByName("v14"); // 물공포
+    //アイテムタイトル
+    var v14v = document.getElementsByName("v14"); // 物攻ポーション
     var v14 = document.getElementById("v14")
     for (var i = 0; i < v14v.length; i++) {
         if (v14v[i].checked)
@@ -36,7 +36,7 @@ function cal() {
             v14 = 1;
         break;
     }
-    var v15v = document.getElementsByName("v15"); // 크래시다 세트
+    var v15v = document.getElementsByName("v15"); // クラシダセット
     var v15 = document.getElementById("v15")
     for (var i = 0; i < v15v.length; i++) {
         if (v15v[i].checked)
@@ -52,24 +52,24 @@ function cal() {
 
 
     
-    //세공
-    var v17 =  Number(document.getElementById("v17").value); //플머 최댐 세공
-    var v18 =  Number(document.getElementById("v18").value); //불연금 마스터리 효율 세공
+    //細工
+    var v17 =  Number(document.getElementById("v17").value); //フレイマー最大ダメージ細工
+    var v18 =  Number(document.getElementById("v18").value); //火錬金マスタリー効率細工
     
-    var v19 = $("#v19 option:selected").attr('value'); // 불 연금마 타이틀
-    var v19_1 = $("#v19 option:selected").attr('value2'); // 연금마 타이틀
+    var v19 = $("#v19 option:selected").attr('value'); // 火錬金マスタリータイトル
+    var v19_1 = $("#v19 option:selected").attr('value2'); // 錬金マスタリータイトル
 
-    var v20 = $("#v20 option:selected").attr('value'); // 가드실린더 마스터
+    var v20 = $("#v20 option:selected").attr('value'); // ガードシリンダーマスター
 
 
-    var v21 =  Number(document.getElementById("v21").value); //추가 대미지 비율
+    var v21 =  Number(document.getElementById("v21").value); // 追加ダメージ比率
 
     
   
 
-    //계산식
+    //計算式
 
-    var resv2; //체력 비례 대미지 
+    var resv2; //体力比例ダメージ 
     if(v2>=3500){
         resv2=3500}
     else{
@@ -78,12 +78,12 @@ function cal() {
 
 
 
-    var res1; //플레이머 대미지 
+    var res1; //フレイマーダメージ 
     res1 = (((1*v1+1*v17+0.08*resv2+v3+1*v19_1+1*v20)*v4+v5+(1+v6 * (1+0.2 * v14) *(v7 / 100)))*(1+v13/100) + v9*v4*((1*v11/100+1*v19+0.005*v18+(1*v10/100))/0.15))*(1+0.15*v15)*v12*(1+v21/100)
     document.getElementById("res1").value = Math.floor(res1);
 
     
-    var res2; //플레이머 크리 대미지 
+    var res2; //フレイマークリダメージ 
     res2 = (((1*v1+1*v17+0.08*resv2+v3+1*v19_1+1*v20)*v4+v5+(1+v6 * (1+0.2 * v14) *(v7 / 100)))*(1+v13/100)*(2.5 + (v8/100)) + v9*v4*(1*v11/100+1*v19+0.005*v18+(v10/100))/0.15)*(1+0.15*v15)*v12*(1+v21/100)
     
 
@@ -96,7 +96,7 @@ function cal() {
 
 }
 
-//리셋
+//リセット
 function reset() {
     document.getElementById("v2").value = "";
     document.getElementById("v3").value = "";
